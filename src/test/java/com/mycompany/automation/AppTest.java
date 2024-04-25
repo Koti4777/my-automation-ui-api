@@ -27,7 +27,7 @@ public class AppTest
 	public void shouldAnswerWithTrue()
 	{
 
-		Driver.getInstance().get("https://www.demoqa.com");
+		Driver.getInstance().get("https://www.google.com");
 		assertTrue( true );
 	}
 }

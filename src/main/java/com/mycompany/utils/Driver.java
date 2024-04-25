@@ -12,30 +12,24 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 public class Driver {
 
 	public static WebDriver driver;
-	
+
 
 	public static WebDriver getInstance() {
 		if (driver == null || ((RemoteWebDriver) driver).getSessionId() == null ) {
 
 			switch("chrome") {
 			case "chrome":
+				ChromeOptions chromeOptions = new ChromeOptions();
 				WebDriverManager.chromedriver().setup();
-				driver = new ChromeDriver();
-				
+				driver = new ChromeDriver(chromeOptions);
+								
 				break;
-			case "firefox":
-				System.setProperty("webdriver.gecko.driver", "./drivers/geckodriver.exe");
-				driver = new FirefoxDriver();
-				driver.get("http://www.kabum.com");
-				break;
-			case "ie":
-				driver = new ChromeDriver();
-				break;
+			
 			default:
 				driver = new ChromeDriver();
 			}
 		}
 
-		return driver;
+	return driver;
 	}
 }

@@ -13,6 +13,8 @@ public class Test {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+			
+			
 			System.out.println("test");
 			ChromeOptions chromeOptions = new ChromeOptions();
 			WebDriverManager.chromedriver().setup();
@@ -21,7 +23,6 @@ public class Test {
 			
 			// Navigate to the demoqa website
 			driver.get("https://www.google.com");
-			
 			//driver.quit();
 	}
 

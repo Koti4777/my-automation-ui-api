@@ -1,8 +1,14 @@
 package com.mycompany.automation;
 
-import static org.junit.Assert.assertTrue;
+import static org.testng.Assert.assertTrue;
 
-import org.junit.Test;
+import org.testng.annotations.Test;
+
+import com.mycompany.utils.Driver;
+
+
+
+
 
 /**
  * Unit test for simple App.
@@ -15,6 +21,8 @@ public class AppTest
     @Test
     public void shouldAnswerWithTrue()
     {
+    	
+    	Driver.getInstance().get("https://www.demoqa.com");
         assertTrue( true );
     }
 }

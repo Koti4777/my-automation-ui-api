@@ -15,11 +15,13 @@ public class Test {
 		
 			
 			
-			System.out.println("test");
+			System.out.println(System.getProperty("user.dir"));
+			System.out.println(System.getenv("user.dir"));
 			ChromeOptions chromeOptions = new ChromeOptions();
 			WebDriverManager.chromedriver().setup();
 			WebDriver driver = new ChromeDriver(chromeOptions);
 			driver.manage().window().maximize();
+			
 			
 			// Navigate to the demoqa website
 			driver.get("https://www.google.com");

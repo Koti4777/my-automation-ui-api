@@ -1,4 +1,4 @@
-package core.java;
+package core.java.examples;
 
 public class SwitchDemo {
 

@@ -1,4 +1,4 @@
-package core.java.examples;
+package core.java.examples.strings;
 
 public class StringDemo {
 	/*

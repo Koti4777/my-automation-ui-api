@@ -1,13 +1,13 @@
 package com.mycompany.utils;
 
 import org.openqa.selenium.WebDriver;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Driver {
 
@@ -17,16 +17,28 @@ public class Driver {
 	public static WebDriver getInstance() {
 		if (driver == null || ((RemoteWebDriver) driver).getSessionId() == null ) {
 
-			switch("chrome") {
+			switch("hello") {
 			case "chrome":
 				ChromeOptions chromeOptions = new ChromeOptions();
 				WebDriverManager.chromedriver().setup();
-				driver = new ChromeDriver(chromeOptions);
-								
+				driver = new ChromeDriver(chromeOptions);								
 				break;
-			
+			case "Firefox":
+				WebDriverManager.firefoxdriver().setup();
+				driver = new FirefoxDriver();
+				break;
+			case "Edge":
+				WebDriverManager.edgedriver().setup();
+				driver = new EdgeDriver();
+				break;
 			default:
-				driver = new ChromeDriver();
+				System.out.println("came here");
+				ChromeOptions options = new ChromeOptions();
+				WebDriverManager.chromedriver().setup();
+				driver = new ChromeDriver(options);	
+				options.addArguments("--headless");
+
+
 			}
 		}
 

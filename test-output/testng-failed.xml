@@ -5,8 +5,8 @@
     <classes>
       <class name="com.mycompany.automation.AppTest">
         <methods>
-          <include name="alertClass"/>
           <include name="setupDriver"/>
+          <include name="sampleText"/>
         </methods>
       </class> <!-- com.mycompany.automation.AppTest -->
     </classes>

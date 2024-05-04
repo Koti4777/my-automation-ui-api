@@ -18,8 +18,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
  * Unit test for simple App.
  */
 public class AppTest {
+WebDriver driver;
 
-	WebDriver driver;
 
 	/**
 	 * Rigorous Test :-)
@@ -38,19 +38,20 @@ public class AppTest {
 	  }
 	 
 	@Test
-	public void alertClass() {
-		ChromeOptions chromeOptions = new ChromeOptions();
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver(chromeOptions);
-		driver.manage().window().maximize();
-		driver.get("https://demo.automationtesting.in/Alerts.html");
-		driver.findElement(By.className("btn btn-danger")).click();
-		
-		  Alert alert = driver.switchTo().alert();
-		  System.out.println("before accetp");
-		  alert.dismiss();		 
-		System.out.println("after accetp");
+	public void sampleText() {
+		/*
+		 * ChromeOptions chromeOptions = new ChromeOptions();
+		 * WebDriverManager.chromedriver().setup(); WebDriver driver = new
+		 * ChromeDriver(chromeOptions); driver.manage().window().maximize();
+		 */
+		driver.get("https://demoqa.com/elements");
+		driver.findElement(By.xpath("//*[@id=\"item-0\"]/span")).click();
+		driver.findElement(By.id("userName")).sendKeys("usernae");
 		
 	}
 
+	@Test
+	public void alertClass() {
+		
+	}
 }

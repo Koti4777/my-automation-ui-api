@@ -1,5 +1,4 @@
 package com.mycompany.automation;
-
 import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.Alert;
@@ -19,23 +18,18 @@ import io.github.bonigarcia.wdm.WebDriverManager;
  */
 public class AppTest {
 WebDriver driver;
+public AppTest() {
+	this.driver=Driver.getInstance();
+}
 
-
-	/**
-	 * Rigorous Test :-)
-	 */
 	@Test
 	public void shouldAnswerWithTrue() {
 
-		assertTrue(true);
+		SeleniumTestHelper.assertEquals("Hello", "Hello", null);
 	}
 
 	
-	  @BeforeTest public void setupDriver() {
-	  
-		  
-	  
-	  }
+	 
 	 
 	@Test
 	public void sampleText() {
@@ -44,14 +38,12 @@ WebDriver driver;
 		 * WebDriverManager.chromedriver().setup(); WebDriver driver = new
 		 * ChromeDriver(chromeOptions); driver.manage().window().maximize();
 		 */
+		
 		driver.get("https://demoqa.com/elements");
-		driver.findElement(By.xpath("//*[@id=\"item-0\"]/span")).click();
-		driver.findElement(By.id("userName")).sendKeys("usernae");
+		SeleniumTestHelper.getScreenshot();
+		
 		
 	}
 
-	@Test
-	public void alertClass() {
-		
-	}
+	
 }

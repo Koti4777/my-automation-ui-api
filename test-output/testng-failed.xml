@@ -5,8 +5,7 @@
     <classes>
       <class name="com.mycompany.automation.AppTest">
         <methods>
-          <include name="setupDriver"/>
-          <include name="sampleText"/>
+          <include name="shouldAnswerWithTrue"/>
         </methods>
       </class> <!-- com.mycompany.automation.AppTest -->
     </classes>

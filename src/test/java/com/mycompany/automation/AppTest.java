@@ -25,6 +25,7 @@ public AppTest() {
 	@Test
 	public void shouldAnswerWithTrue() {
 
+		driver.get("https://www.google.com");
 		SeleniumTestHelper.assertEquals("Hello", "Hello", null);
 	}
 
@@ -38,10 +39,11 @@ public AppTest() {
 		 * WebDriverManager.chromedriver().setup(); WebDriver driver = new
 		 * ChromeDriver(chromeOptions); driver.manage().window().maximize();
 		 */
-		
+		String methodName = new Object(){}.getClass().getEnclosingMethod().getName();
 		driver.get("https://demoqa.com/elements");
-		SeleniumTestHelper.getScreenshot();
-		
+		SeleniumTestHelper.getScreenshot(methodName);
+	
+		System.out.println("Method name is "+methodName);
 		
 	}
 

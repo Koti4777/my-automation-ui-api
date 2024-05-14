@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\koteswararao Majji\AppData\Local\Temp\testng-eclipse--761289664\testng-customsuite.xml</span>
+                    <span>C:\Users\koteswararao Majji\AppData\Local\Temp\testng-eclipse--1797570361\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.restAssured.automaiton.GetOrderWithAccessToken" class="method navigator-link" hash-for-method="createOrder">createOrder</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,22 +102,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.restAssured.automaiton.GetOrderWithAccessToken" class="method navigator-link" hash-for-method="createAccessToken">createAccessToken</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.mycompany.automation.TestNGClassDemo" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.restAssured.automaiton.GetOrderWithAccessToken" class="method navigator-link" hash-for-method="getOrder">getOrder</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.mycompany.automation.TestNGClassDemo" class="method navigator-link" hash-for-method="test2">test2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.restAssured.automaiton.GetOrderWithAccessToken" class="method navigator-link" hash-for-method="getOrderJSONFile">getOrderJSONFile</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.restAssured.automaiton.GetOrderWithAccessToken" class="method navigator-link" hash-for-method="readingJSONFile">readingJSONFile</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.mycompany.automation.TestNGClassDemo" class="method navigator-link" hash-for-method="test3">test3</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -146,97 +127,31 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.restAssured.automaiton.GetOrderWithAccessToken</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="createOrder">
-                  </a> <!-- createOrder -->
-                  <span class="method-name">createOrder</span>
-                  <div class="stack-trace">java.lang.IllegalArgumentException: Header value cannot be null
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
-	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)
-	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
-	at io.restassured.internal.RequestSpecificationImpl.header(RequestSpecificationImpl.groovy:869)
-	at com.restAssured.automaiton.GetOrderWithAccessToken.createOrder(GetOrderWithAccessToken.java:50)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.restAssured.automaiton.GetOrderWithAccessToken</span>
+              <span class="class-name">com.mycompany.automation.TestNGClassDemo</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createAccessToken">
-                  </a> <!-- createAccessToken -->
-                  <span class="method-name">createAccessToken</span>
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="getOrder">
-                  </a> <!-- getOrder -->
-                  <span class="method-name">getOrder</span>
+                  <a name="test2">
+                  </a> <!-- test2 -->
+                  <span class="method-name">test2</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="getOrderJSONFile">
-                  </a> <!-- getOrderJSONFile -->
-                  <span class="method-name">getOrderJSONFile</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="readingJSONFile">
-                  </a> <!-- readingJSONFile -->
-                  <span class="method-name">readingJSONFile</span>
+                  <a name="test3">
+                  </a> <!-- test3 -->
+                  <span class="method-name">test3</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -244,7 +159,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\koteswararao Majji\AppData\Local\Temp\testng-eclipse--761289664\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\koteswararao Majji\AppData\Local\Temp\testng-eclipse--1797570361\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -253,7 +168,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.restAssured.automaiton.GetOrderWithAccessToken&quot;/&gt;
+      &lt;class name=&quot;com.mycompany.automation.TestNGClassDemo&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -293,32 +208,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createAccessToken')
-data.setCell(0, 2, 'com.restAssured.automaiton.GetOrderWithAccessToken')
-data.setCell(0, 3, 3291);
+data.setCell(0, 1, 'test3')
+data.setCell(0, 2, 'com.mycompany.automation.TestNGClassDemo')
+data.setCell(0, 3, 140);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'getOrder')
-data.setCell(1, 2, 'com.restAssured.automaiton.GetOrderWithAccessToken')
-data.setCell(1, 3, 1467);
+data.setCell(1, 1, 'test1')
+data.setCell(1, 2, 'com.mycompany.automation.TestNGClassDemo')
+data.setCell(1, 3, 40);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'getOrderJSONFile')
-data.setCell(2, 2, 'com.restAssured.automaiton.GetOrderWithAccessToken')
-data.setCell(2, 3, 1351);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'createOrder')
-data.setCell(3, 2, 'com.restAssured.automaiton.GetOrderWithAccessToken')
-data.setCell(3, 3, 12);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'readingJSONFile')
-data.setCell(4, 2, 'com.restAssured.automaiton.GetOrderWithAccessToken')
-data.setCell(4, 3, 4);
+data.setCell(2, 1, 'test2')
+data.setCell(2, 2, 'com.mycompany.automation.TestNGClassDemo')
+data.setCell(2, 3, 2);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 182 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -344,32 +251,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.restAssured.automaiton.GetOrderWithAccessToken</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">connect</span>
+              <div class="chronological-class-name">com.mycompany.automation.TestNGClassDemo</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test1</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">createAccessToken</span>
-                <span class="method-start">820 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">createOrder</span>
-                <span class="method-start">4115 ms</span>
+                <span class="method-name">test2</span>
+                <span class="method-start">49 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">getOrder</span>
-                <span class="method-start">4132 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">getOrderJSONFile</span>
-                <span class="method-start">5601 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">readingJSONFile</span>
-                <span class="method-start">6954 ms</span>
+                <span class="method-name">test3</span>
+                <span class="method-start">54 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,4 +1,4 @@
-package com.restAssured.automaiton;
+package com.mycompany.automation;
 
 import java.io.IOException;
 import java.net.URL;
@@ -9,6 +9,8 @@ import org.openqa.selenium.Capabilities;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+
+import com.restAssured.automaiton.SuiteConfiguration;
 
 import ru.stqa.selenium.factory.WebDriverPool;
 

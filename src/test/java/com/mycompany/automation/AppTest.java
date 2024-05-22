@@ -1,23 +1,19 @@
 package com.mycompany.automation;
-import static org.testng.Assert.assertTrue;
-
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.annotations.BeforeTest;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.mycompany.utils.Driver;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 /**
  * Unit test for simple App.
  */
 public class AppTest {
 WebDriver driver;
+ExtentReports report;
 public AppTest() {
 	this.driver=Driver.getInstance();
 }
@@ -29,9 +25,15 @@ public AppTest() {
 		SeleniumTestHelper.assertEquals("Hello", "Hello", null);
 	}
 
-	
+	@AfterTest
 	 
-	 
+	 public void report(ITestResult result) {
+		ExtentReports report = new ExtentReports();
+		ExtentHtmlReporter htmlReport = new ExtentHtmlReporter(System.getProperty("user.dir")+"\\extentreports\\"+this.getClass()+".html");
+		report.attachReporter(htmlReport);
+		report.getClass();
+		
+	}
 	@Test
 	public void sampleText() {
 		/*

@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.restAssured.automaiton.GetOrderWithAccessToken">
+      <class name="com.restAssured.automaiton.TestNGDemo">
         <methods>
-          <include name="connect"/>
-          <include name="createOrder"/>
+          <include name="reportSetup"/>
+          <include name="test2"/>
+          <include name="test3"/>
+          <include name="test1"/>
         </methods>
-      </class> <!-- com.restAssured.automaiton.GetOrderWithAccessToken -->
+      </class> <!-- com.restAssured.automaiton.TestNGDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

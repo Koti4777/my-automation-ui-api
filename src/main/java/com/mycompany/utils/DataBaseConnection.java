@@ -8,6 +8,9 @@ public class DataBaseConnection {
 	String password = "<password>";
 	Connection connection;
 
-public static String executeSQL
+public static String executeSQL() {
+	return null;
+	
+}
 	
 }

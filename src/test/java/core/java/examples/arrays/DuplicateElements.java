@@ -12,6 +12,7 @@ public class DuplicateElements {
 			if(!inputSet.add(element)) {
 				System.out.println(element);
 			}
+			
 		}
 	}
 	

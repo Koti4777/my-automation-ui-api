@@ -34,9 +34,10 @@ public class Driver {
 			default:
 				System.out.println("came here");
 				ChromeOptions options = new ChromeOptions();
+				options.addArguments("--headless");
 				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver(options);	
-				options.addArguments("--headless");
+				
 
 
 			}

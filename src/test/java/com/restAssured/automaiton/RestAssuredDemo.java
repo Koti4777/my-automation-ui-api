@@ -14,7 +14,7 @@ public class RestAssuredDemo {
 		RestAssured.baseURI="";
 		RequestSpecification httpRequest = RestAssured.given();
 		Response response = httpRequest.request("");
-		Response response1 = httpRequest.request(Method.GET, "/Bookstore/v1/Books");
+		Response response1 = httpRequest.request("/Bookstore/v1/Books");
 
 	}
 

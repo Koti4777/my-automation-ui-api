@@ -89,7 +89,7 @@ public class SeleniumTestHelper {
 		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		TakesScreenshot sc = (TakesScreenshot) driver;
 		File source = sc.getScreenshotAs(OutputType.FILE);
-		String destination = System.getProperty("user.dir") + "/screenshots/" + methodName+"_"+dateName + ".png";
+		String destination = System.getProperty("user.dir") + "\\screenshots\\" + methodName+"_"+dateName + ".png";
 		File finalDestination = new File(destination);
 		try {
 			FileUtils.copyFile(source, finalDestination);

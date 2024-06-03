@@ -20,10 +20,13 @@ public class ReverseEachWordOfString22 {
 		
 		for (int i=0;i<words.length;i++) {
 			
-			for (int j=words[i].length()-1;j>=0;j--) {
-				//System.out.println(words[i].charAt(j));
-				output=output+words[i].charAt(j);
-			}
+			/*
+			 * for (int j=words[i].length()-1;j>=0;j--) {
+			 * //System.out.println(words[i].charAt(j)); output=output+words[i].charAt(j); }
+			 */
+		
+			StringBuilder sb = new StringBuilder(words[i]);
+			sb.reverse().toString();
 			output=output+" ";
 			
 		}

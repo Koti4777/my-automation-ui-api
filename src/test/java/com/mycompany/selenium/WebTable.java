@@ -66,7 +66,7 @@ public class WebTable {
 			System.out.print(col.getText()+" ");
 		 }
 		 System.out.println();
-			for(int i=1;i<=rows.size();i++) { 
+			for(int i=1;i<rows.size();i++) { 
 				
 				for (int j=1;j<=columns.size();j++) {
 					

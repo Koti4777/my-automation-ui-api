@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.mycompany.automation.WebTable">
+      <class name="com.mycompany.selenium.WebTable">
         <methods>
           <include name="initiateBroswer"/>
-          <include name="getTable"/>
           <include name="tearDwon"/>
+          <include name="getTrainTimeTable"/>
         </methods>
-      </class> <!-- com.mycompany.automation.WebTable -->
+      </class> <!-- com.mycompany.selenium.WebTable -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

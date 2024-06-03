@@ -17,7 +17,7 @@ public class LeadersArray25 {
 				}				
 			}
 			if(flag) {
-				System.out.println(numbers[i]+" is Leader");
+				System.out.println(numbers[i]+" is Leader");// from feature
 			}
 		}
 		

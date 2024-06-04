@@ -2,7 +2,7 @@ package core.java.examples;
 
 import java.util.Scanner;
 
-public class MakePalindrome {
+public class MakePalindrome26 {
 
 	public static int reverse(int input) {
 		int reverse=0;

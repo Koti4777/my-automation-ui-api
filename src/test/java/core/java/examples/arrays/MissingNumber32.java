@@ -1,6 +1,6 @@
 package core.java.examples.arrays;
 
-public class MissingNumber {
+public class MissingNumber32 {
 
 	public static void main(String[] args) {
 		

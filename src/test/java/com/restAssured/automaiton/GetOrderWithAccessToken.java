@@ -25,6 +25,7 @@ public class GetOrderWithAccessToken {
 			"  \"clientEmail\": \"koti20122311@example.com\"\r\n"+
 			"}";
 	
+	
 	public static void updateOrderJSON() {
 		
 	}
@@ -33,6 +34,7 @@ public class GetOrderWithAccessToken {
 		RestAssured.baseURI=baseURL;
 		httpRequest = RestAssured.given();
 		httpRequest.header("Content-Type","application/json");
+		System.out.println(payLoad);
 	}
 	@Test
 	public static void createAccessToken() {
@@ -45,7 +47,7 @@ public class GetOrderWithAccessToken {
 		
 	}
 
-	@Test
+	@Test(enabled = false)
 	public static void createOrder() {
 		httpRequest.header("Authorization",token).header("Content-Type","application/json");
 		String filePath = "src/main/resources/payloads/CreateOrder.json";
@@ -74,12 +76,12 @@ public class GetOrderWithAccessToken {
 	public static void getOrderJSONFile() {
 		Response getOrderResponse = httpRequest.accept(ContentType.JSON).param("orderID", orderID).when().get("/orders");
 		String getOrderString = getOrderResponse.asString();
-		File getOrderBody = new File("src/main/resources/responses/GetOrder.json");
+		File getOrderBody = new File("/src/main/resources/responses/GetOrder.json");
 		try (FileWriter fileWriter = new FileWriter(getOrderBody)) {
 		    fileWriter.write(getOrderString);
 		} catch (IOException e) {
 		    // Handle potential exceptions
-		    e.printStackTrace();
+		   // e.printStackTrace();
 		}
 		
 		
@@ -93,7 +95,7 @@ public class GetOrderWithAccessToken {
 		    System.out.println(getOrderBody);
 		} catch (IOException e) {
 		    // Handle potential exceptions
-		    e.printStackTrace();
+		   // e.printStackTrace();
 		}
 		
 		

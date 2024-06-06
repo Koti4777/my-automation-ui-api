@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.mycompany.selenium.WebTable">
+      <class name="com.restAssured.automaiton.GetOrderWithAccessToken">
         <methods>
-          <include name="initiateBroswer"/>
-          <include name="tearDwon"/>
-          <include name="getTrainTimeTable"/>
+          <include name="connect"/>
+          <include name="createOrder"/>
         </methods>
-      </class> <!-- com.mycompany.selenium.WebTable -->
+      </class> <!-- com.restAssured.automaiton.GetOrderWithAccessToken -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

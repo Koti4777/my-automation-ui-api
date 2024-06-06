@@ -29,8 +29,9 @@ public class HashMapSortDemo {
 			@Override
 			public int compare(Entry<String, Integer> m1, Entry<String, Integer> m2) {
 				// TODO Auto-generated method stub
-				//return m1.getKey().compareTo(m1.getKey());
-				return m1.getValue().compareTo(m2.getValue());
+				//return m1.getKey().compareTo(m1.getKey());// this will sort on key
+				return m1.getValue().compareTo(m2.getValue());//this will sort on value
+				
 			}
 		};
 

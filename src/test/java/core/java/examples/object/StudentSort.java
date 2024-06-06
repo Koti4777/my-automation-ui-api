@@ -2,11 +2,33 @@ package core.java.examples.object;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
+import java.util.Map;
+import java.util.Map.Entry;
 
 
 
 public class StudentSort {
+	static // compare with student Id
+	Comparator<StudentInfo> idCompare = new Comparator<StudentInfo>() {
 
+		@Override
+		public int compare(StudentInfo s1, StudentInfo s2) {
+			// TODO Auto-generated method stub
+			return s1.id-s2.id;
+		}
+	};
+	// compare with student Id
+	static Comparator<StudentInfo> marksCompare = new Comparator<StudentInfo>() {
+
+		@Override
+		public int compare(StudentInfo s1, StudentInfo s2) {
+			// TODO Auto-generated method stub		
+			return s2.marks-s1.marks;// desc order
+		}
+	};
+	
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		StudentInfo s1 = new StudentInfo("Hari", 90,4);
@@ -19,7 +41,7 @@ public class StudentSort {
 		studentRecords.add(s3);
 		studentRecords.add(s4);
 		System.out.println("Sort by Marks");
-		Collections.sort(studentRecords, new MarksCompare());
+		Collections.sort(studentRecords, marksCompare);
 
 		for (StudentInfo stu:studentRecords) {
 			System.out.println(stu.id+"---"+stu.name+"---"+stu.marks);
@@ -31,10 +53,10 @@ public class StudentSort {
 		}
 
 		System.out.println("Sort by ID");
-		Collections.sort(studentRecords, new IdCompare());
+		Collections.sort(studentRecords, idCompare);
 		for (StudentInfo stu:studentRecords) {
 			System.out.println(stu.id+"---"+stu.name+"---"+stu.marks);
 		}
-	}
+	}	
 
 }

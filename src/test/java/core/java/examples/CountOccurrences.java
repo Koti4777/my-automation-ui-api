@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class CountOccurrences {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// updated in feature to fetch in master
 		int[] numbers =  {12, 9, 12, 9, 10, 9, 10, 11};
 		HashMap<Integer,Integer> numMap = new HashMap<>();
 		System.out.println(numMap);

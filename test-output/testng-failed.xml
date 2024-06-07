@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.restAssured.automaiton.GetOrderWithAccessToken">
+      <class name="core.java.examples.ReverseTest">
         <methods>
-          <include name="connect"/>
-          <include name="createOrder"/>
+          <include name="testOverflow"/>
         </methods>
-      </class> <!-- com.restAssured.automaiton.GetOrderWithAccessToken -->
+      </class> <!-- core.java.examples.ReverseTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

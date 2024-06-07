@@ -32,7 +32,7 @@ public class StudentSort {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		StudentInfo s1 = new StudentInfo("Hari", 90,4);
-		StudentInfo s2 = new StudentInfo("Krishna", 80,3);
+		StudentInfo s2 = new StudentInfo("Krishnaveni", 80,3);
 		StudentInfo s3 = new StudentInfo("Krishna", 70,1);
 		StudentInfo s4 = new StudentInfo("Ram", 95,2);
 		ArrayList<StudentInfo> studentRecords = new ArrayList<>();

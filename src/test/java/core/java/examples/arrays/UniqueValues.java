@@ -29,10 +29,7 @@ public class UniqueValues {
 		
 		int[] input = {1,5,9,4,7,2,1,5};
 		System.out.println("Calling from Function"+ Arrays.toString(returnUniqueValues(input)));
-		int[] output = new int[input.length];
-		
-		int count = 0;
-
+	
 		LinkedHashMap<Integer,Integer> numbersMap = new LinkedHashMap<Integer,Integer>();
 		for (int i=0;i<input.length;i++) {
 			numbersMap.put(input[i], i);
@@ -40,7 +37,7 @@ public class UniqueValues {
 		System.out.println("using maps and keySet");
 		System.out.println(numbersMap.keySet());
 		System.out.println(numbersMap);
-		/// using set
+	
 		
 			
 		

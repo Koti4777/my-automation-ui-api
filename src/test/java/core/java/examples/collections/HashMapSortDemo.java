@@ -23,6 +23,8 @@ public class HashMapSortDemo {
 		namesMap.put("Satish", 9777);
 		namesMap.put("Ram", 9999);
 		namesMap.put("Krishna", 5777);
+		System.out.println(namesMap+" names map");
+		
 
 		Comparator<Map.Entry<String, Integer>> valueComprator = new Comparator<Map.Entry<String, Integer>>() {
 
@@ -36,11 +38,12 @@ public class HashMapSortDemo {
 		};
 
 		ArrayList<Map.Entry<String, Integer>> namesList = new ArrayList<>(namesMap.entrySet());
+		
 		//Set<String> nameSet = new HashSet<>(namesMap.keySet());
 
 		
 		Collections.sort(namesList,valueComprator);
-		System.out.println(namesList);
+		System.out.println(namesList+"Name List");
 		 for (Map.Entry<String, Integer> entry : namesList) {
 		      System.out.println(entry.getKey() + " : " + entry.getValue());
 		    }

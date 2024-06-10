@@ -47,6 +47,15 @@ public class ReverseTest {
         int actual = MakePalindrome26.reverse(input);
         assertEquals(expected, actual);
     }
+    
+    @Test
+    public void testNull() {
+        int input = 123456789;
+        int expected = 987654321;
+        int actual = MakePalindrome26.reverse(input);
+        assertEquals(expected, actual);
+    }
+
 
 	
 	  @Test public void testOverflow() { // This test depends on the integer size(32-bit in this case)

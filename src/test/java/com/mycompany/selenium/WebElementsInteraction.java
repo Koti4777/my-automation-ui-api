@@ -32,8 +32,7 @@ public class WebElementsInteraction {
 		//System.out.println("frame 1 txt is --"+driver.findElement(By.xpath("//h1[@id='sampleHeading']")).getText());
 		//above one will fail boz we are trying to interact before switching to frame
 		
-		System.out.println(window+"window");
-		System.out.println(window.toString()+"windows");
+		
 		driver.switchTo().frame(frame);
 		System.out.println("frame 1 txt is --"+driver.findElement(By.xpath("//h1[@id='sampleHeading']")).getText());
 	}

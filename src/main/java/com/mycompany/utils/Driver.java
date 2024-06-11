@@ -17,7 +17,7 @@ public class Driver {
 	public static WebDriver getInstance() {
 		if (driver == null || ((RemoteWebDriver) driver).getSessionId() == null ) {
 
-			switch("hello") {
+			switch("chrome") {
 			case "chrome":
 				ChromeOptions chromeOptions = new ChromeOptions();
 				WebDriverManager.chromedriver().setup();

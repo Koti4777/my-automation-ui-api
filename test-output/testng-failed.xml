@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="core.java.examples.ReverseTest">
+      <class name="com.mycompany.selenium.WebElementsInteraction">
         <methods>
-          <include name="testOverflow"/>
+          <include name="initiateBroswer"/>
+          <include name="iFrameInteraction"/>
+          <include name="tearDwon"/>
         </methods>
-      </class> <!-- core.java.examples.ReverseTest -->
+      </class> <!-- com.mycompany.selenium.WebElementsInteraction -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

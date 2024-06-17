@@ -4,11 +4,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedHashMap;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.Set;
 
 public class HashMapSortDemo {
 
@@ -47,8 +45,13 @@ public class HashMapSortDemo {
 		 for (Map.Entry<String, Integer> entry : namesList) {
 		      System.out.println(entry.getKey() + " : " + entry.getValue());
 		    }
-		
-		
+		Iterator<Entry<String, Integer>> iterator = namesList.iterator();
+		System.out.println("using Iterator");
+		while(iterator.hasNext()) {
+			iterator.remove();
+			
+		}
+		System.out.println(namesList+"Name List");
 	}
 
 }

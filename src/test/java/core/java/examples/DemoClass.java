@@ -1,18 +1,18 @@
 package core.java.examples;
 
+import java.util.HashMap;
+
 public class DemoClass {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-String s1 = "Hello";
-String s2 = "world";
-System.out.println(s1+s2);
-System.out.println("After");
- s1 = s1+s2;
- 
- s2 = s1.substring(0,s1.length()-s2.length());
- s1=s1.substring(s2.length());
- System.out.println(s1+s2);
+		 int[] inputArray = new int[] {111, 333, 555, 777, 333, 444, 555,444,111};
+		 
+		 for (int i=0;i<inputArray.length;i++) {
+			 for (int j=i+1;j<inputArray.length;j++) {
+				 if (inputArray[i]==inputArray[j]) {
+					 System.out.print("Duplicate Elements:"+inputArray[i]+"\t");
+				 }
+			 }
+		 }
 	}
-
 }

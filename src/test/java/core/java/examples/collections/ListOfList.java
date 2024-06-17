@@ -18,7 +18,7 @@ public class ListOfList {
 		aList2.add("five");
 		aList2.add("sex");
 		listOfList.add(aList1);
-		listOfList.add(aList1);
+		listOfList.add(aList2);
 		
 		System.out.println(listOfList.toString());
 		String[] sArray = new String[] {"hello", "world","!"};

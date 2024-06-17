@@ -15,7 +15,7 @@ public class RepeatedWordInFile {
 		BufferedReader reader = null;
 		try {
 			//System.out.println(System.getProperty("user.dir")+"\\resources\\responses\\Notepad1.txt");
-			reader = new BufferedReader(new FileReader(System.getProperty("user.dir")+"\\resources\\payloads\\Notepad1.txt"));
+			reader = new BufferedReader(new FileReader(System.getProperty("user.dir")+"//resources//payloads//Notepad1.txt"));
 			String currentLine = reader.readLine();
 			while (currentLine!=null) {
 				String[] words = currentLine.toLowerCase().split(" ");

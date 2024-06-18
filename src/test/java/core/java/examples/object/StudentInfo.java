@@ -2,9 +2,9 @@ package core.java.examples.object;
 
 public class StudentInfo {
 
-	String name;
-	int marks;
-	int id;
+	private String name;
+	private int marks;
+	private int id;
 	
 	public String getName() {
 		return name;

@@ -45,7 +45,7 @@ public class CompareExcelFiles {
 						while (cellIterator1.hasNext() && cellIterator2.hasNext()) {
 							Cell currentCell1 = cellIterator1.next();
 							Cell currentCell2 = cellIterator2.next();
-
+//comparing cell values if not matching making it false and breaking the outerLoop
 							if (!currentCell1.getStringCellValue().equals(currentCell2.getStringCellValue())) {
 								flag = false;
 								break outerLoop;

@@ -1,173 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-17T17:33:36 IST" name="Automation-Suite" finished-at="2024-06-17T17:33:37 IST" duration-ms="241">
+  <suite started-at="2024-06-18T11:17:23 IST" name="Default suite" finished-at="2024-06-18T11:17:34 IST" duration-ms="10444">
     <groups>
     </groups>
-    <test started-at="2024-06-17T17:33:36 IST" name="Sanity" finished-at="2024-06-17T17:33:37 IST" duration-ms="79">
-      <class name="testNGDemo.TestNGDemo">
-        <test-method is-config="true" signature="beforeTestClassone()[pri:0, instance:testNGDemo.TestNGDemo@f5acb9d]" started-at="2024-06-17T17:33:36 IST" name="beforeTestClassone" finished-at="2024-06-17T17:33:36 IST" duration-ms="0" status="PASS">
+    <test started-at="2024-06-18T11:17:23 IST" name="Default test" finished-at="2024-06-18T11:17:34 IST" duration-ms="10444">
+      <class name="com.mycompany.selenium.WebTableToExcel">
+        <test-method is-config="true" signature="initiateBroswer()[pri:0, instance:com.mycompany.selenium.WebTableToExcel@6283d8b8]" started-at="2024-06-18T11:17:23 IST" name="initiateBroswer" finished-at="2024-06-18T11:17:26 IST" duration-ms="2319" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTestClassone -->
-        <test-method is-config="true" signature="beforeClassTestClassOne()[pri:0, instance:testNGDemo.TestNGDemo@f5acb9d]" started-at="2024-06-17T17:33:36 IST" name="beforeClassTestClassOne" finished-at="2024-06-17T17:33:36 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- initiateBroswer -->
+        <test-method signature="getTrainTimeTable()[pri:0, instance:com.mycompany.selenium.WebTableToExcel@6283d8b8]" started-at="2024-06-18T11:17:26 IST" name="getTrainTimeTable" finished-at="2024-06-18T11:17:33 IST" duration-ms="7705" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClassTestClassOne -->
-        <test-method is-config="true" signature="beforeMethodClassone()[pri:0, instance:testNGDemo.TestNGDemo@f5acb9d]" started-at="2024-06-17T17:33:36 IST" name="beforeMethodClassone" finished-at="2024-06-17T17:33:36 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- getTrainTimeTable -->
+        <test-method is-config="true" signature="tearDwon()[pri:0, instance:com.mycompany.selenium.WebTableToExcel@6283d8b8]" started-at="2024-06-18T11:17:33 IST" name="tearDwon" finished-at="2024-06-18T11:17:34 IST" duration-ms="375" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethodClassone -->
-        <test-method signature="test1Class1()[pri:0, instance:testNGDemo.TestNGDemo@f5acb9d]" started-at="2024-06-17T17:33:36 IST" name="test1Class1" finished-at="2024-06-17T17:33:36 IST" duration-ms="11" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1Class1 -->
-        <test-method is-config="true" signature="afterMethodClassOne()[pri:0, instance:testNGDemo.TestNGDemo@f5acb9d]" started-at="2024-06-17T17:33:36 IST" name="afterMethodClassOne" finished-at="2024-06-17T17:33:36 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethodClassOne -->
-        <test-method signature="test2Class1()[pri:0, instance:testNGDemo.TestNGDemo@f5acb9d]" started-at="2024-06-17T17:33:36 IST" name="test2Class1" finished-at="2024-06-17T17:33:36 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2Class1 -->
-        <test-method is-config="true" signature="beforeMethodClassone()[pri:0, instance:testNGDemo.TestNGDemo@f5acb9d]" started-at="2024-06-17T17:33:36 IST" name="beforeMethodClassone" finished-at="2024-06-17T17:33:36 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethodClassone -->
-        <test-method is-config="true" signature="afterMethodClassOne()[pri:0, instance:testNGDemo.TestNGDemo@f5acb9d]" started-at="2024-06-17T17:33:36 IST" name="afterMethodClassOne" finished-at="2024-06-17T17:33:36 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethodClassOne -->
-        <test-method signature="test3Class1()[pri:0, instance:testNGDemo.TestNGDemo@f5acb9d]" started-at="2024-06-17T17:33:36 IST" name="test3Class1" finished-at="2024-06-17T17:33:36 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test3Class1 -->
-        <test-method is-config="true" signature="beforeMethodClassone()[pri:0, instance:testNGDemo.TestNGDemo@f5acb9d]" started-at="2024-06-17T17:33:36 IST" name="beforeMethodClassone" finished-at="2024-06-17T17:33:36 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethodClassone -->
-        <test-method is-config="true" signature="afterMethodClassOne()[pri:0, instance:testNGDemo.TestNGDemo@f5acb9d]" started-at="2024-06-17T17:33:36 IST" name="afterMethodClassOne" finished-at="2024-06-17T17:33:36 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethodClassOne -->
-        <test-method is-config="true" signature="afterClassTestClassOne()[pri:0, instance:testNGDemo.TestNGDemo@f5acb9d]" started-at="2024-06-17T17:33:36 IST" name="afterClassTestClassOne" finished-at="2024-06-17T17:33:36 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClassTestClassOne -->
-        <test-method is-config="true" signature="afterTestClassone()[pri:0, instance:testNGDemo.TestNGDemo@f5acb9d]" started-at="2024-06-17T17:33:37 IST" name="afterTestClassone" finished-at="2024-06-17T17:33:37 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTestClassone -->
-      </class> <!-- testNGDemo.TestNGDemo -->
-      <class name="testNGDemo.TestngDemo1">
-        <test-method is-config="true" signature="beforeTestClass2()[pri:0, instance:testNGDemo.TestngDemo1@4fb3ee4e]" started-at="2024-06-17T17:33:36 IST" name="beforeTestClass2" finished-at="2024-06-17T17:33:36 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTestClass2 -->
-        <test-method is-config="true" signature="beforeClassTest()[pri:0, instance:testNGDemo.TestngDemo1@4fb3ee4e]" started-at="2024-06-17T17:33:37 IST" name="beforeClassTest" finished-at="2024-06-17T17:33:37 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClassTest -->
-        <test-method signature="testcaseOneClass1()[pri:0, instance:testNGDemo.TestngDemo1@4fb3ee4e]" started-at="2024-06-17T17:33:37 IST" name="testcaseOneClass1" finished-at="2024-06-17T17:33:37 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testcaseOneClass1 -->
-        <test-method signature="testcaseTwoClass2()[pri:0, instance:testNGDemo.TestngDemo1@4fb3ee4e]" started-at="2024-06-17T17:33:37 IST" name="testcaseTwoClass2" finished-at="2024-06-17T17:33:37 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testcaseTwoClass2 -->
-        <test-method is-config="true" signature="afterClassTest()[pri:0, instance:testNGDemo.TestngDemo1@4fb3ee4e]" started-at="2024-06-17T17:33:37 IST" name="afterClassTest" finished-at="2024-06-17T17:33:37 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClassTest -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testNGDemo.TestngDemo1@4fb3ee4e]" started-at="2024-06-17T17:33:37 IST" name="afterTest" finished-at="2024-06-17T17:33:37 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- testNGDemo.TestngDemo1 -->
-      <class name="testNGDemo.TestngDemo2">
-        <test-method is-config="true" signature="beforeTestClass2()[pri:0, instance:testNGDemo.TestngDemo2@5d7148e2]" started-at="2024-06-17T17:33:36 IST" name="beforeTestClass2" finished-at="2024-06-17T17:33:36 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTestClass2 -->
-        <test-method is-config="true" signature="beforeClassTest()[pri:0, instance:testNGDemo.TestngDemo2@5d7148e2]" started-at="2024-06-17T17:33:37 IST" name="beforeClassTest" finished-at="2024-06-17T17:33:37 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClassTest -->
-        <test-method signature="testcaseOneClass1()[pri:0, instance:testNGDemo.TestngDemo2@5d7148e2]" started-at="2024-06-17T17:33:37 IST" name="testcaseOneClass1" finished-at="2024-06-17T17:33:37 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testcaseOneClass1 -->
-        <test-method signature="testcaseTwoClass2()[pri:0, instance:testNGDemo.TestngDemo2@5d7148e2]" started-at="2024-06-17T17:33:37 IST" name="testcaseTwoClass2" finished-at="2024-06-17T17:33:37 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testcaseTwoClass2 -->
-        <test-method is-config="true" signature="afterClassTest()[pri:0, instance:testNGDemo.TestngDemo2@5d7148e2]" started-at="2024-06-17T17:33:37 IST" name="afterClassTest" finished-at="2024-06-17T17:33:37 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClassTest -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testNGDemo.TestngDemo2@5d7148e2]" started-at="2024-06-17T17:33:37 IST" name="afterTest" finished-at="2024-06-17T17:33:37 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- testNGDemo.TestngDemo2 -->
-    </test> <!-- Sanity -->
-    <test started-at="2024-06-17T17:33:37 IST" name="Regression" finished-at="2024-06-17T17:33:37 IST" duration-ms="13">
-      <class name="testNGDemo.TestNGDemo">
-        <test-method is-config="true" signature="beforeSuiteTest()[pri:0, instance:testNGDemo.TestNGDemo@f5acb9d]" started-at="2024-06-17T17:33:36 IST" name="beforeSuiteTest" finished-at="2024-06-17T17:33:36 IST" duration-ms="10" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuiteTest -->
-        <test-method is-config="true" signature="AfterSuiteTest()[pri:0, instance:testNGDemo.TestNGDemo@f5acb9d]" started-at="2024-06-17T17:33:37 IST" name="AfterSuiteTest" finished-at="2024-06-17T17:33:37 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterSuiteTest -->
-      </class> <!-- testNGDemo.TestNGDemo -->
-      <class name="testNGDemo.TestngDemo1">
-        <test-method is-config="true" signature="beforeSuiteClass2()[pri:0, instance:testNGDemo.TestngDemo1@4fb3ee4e]" started-at="2024-06-17T17:33:36 IST" name="beforeSuiteClass2" finished-at="2024-06-17T17:33:36 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuiteClass2 -->
-        <test-method is-config="true" signature="afterSuiteClass2()[pri:0, instance:testNGDemo.TestngDemo1@4fb3ee4e]" started-at="2024-06-17T17:33:37 IST" name="afterSuiteClass2" finished-at="2024-06-17T17:33:37 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuiteClass2 -->
-      </class> <!-- testNGDemo.TestngDemo1 -->
-      <class name="testNGDemo.TestngDemo2">
-        <test-method is-config="true" signature="beforeSuiteClass2()[pri:0, instance:testNGDemo.TestngDemo2@1de5f259]" started-at="2024-06-17T17:33:36 IST" name="beforeSuiteClass2" finished-at="2024-06-17T17:33:36 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuiteClass2 -->
-        <test-method is-config="true" signature="beforeTestClass2()[pri:0, instance:testNGDemo.TestngDemo2@1de5f259]" started-at="2024-06-17T17:33:37 IST" name="beforeTestClass2" finished-at="2024-06-17T17:33:37 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTestClass2 -->
-        <test-method signature="testcaseOneClass1()[pri:0, instance:testNGDemo.TestngDemo2@1de5f259]" started-at="2024-06-17T17:33:37 IST" name="testcaseOneClass1" finished-at="2024-06-17T17:33:37 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testcaseOneClass1 -->
-        <test-method is-config="true" signature="beforeClassTest()[pri:0, instance:testNGDemo.TestngDemo2@1de5f259]" started-at="2024-06-17T17:33:37 IST" name="beforeClassTest" finished-at="2024-06-17T17:33:37 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClassTest -->
-        <test-method signature="testcaseTwoClass2()[pri:0, instance:testNGDemo.TestngDemo2@1de5f259]" started-at="2024-06-17T17:33:37 IST" name="testcaseTwoClass2" finished-at="2024-06-17T17:33:37 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testcaseTwoClass2 -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testNGDemo.TestngDemo2@1de5f259]" started-at="2024-06-17T17:33:37 IST" name="afterTest" finished-at="2024-06-17T17:33:37 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterClassTest()[pri:0, instance:testNGDemo.TestngDemo2@1de5f259]" started-at="2024-06-17T17:33:37 IST" name="afterClassTest" finished-at="2024-06-17T17:33:37 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClassTest -->
-        <test-method is-config="true" signature="afterSuiteClass2()[pri:0, instance:testNGDemo.TestngDemo2@1de5f259]" started-at="2024-06-17T17:33:37 IST" name="afterSuiteClass2" finished-at="2024-06-17T17:33:37 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuiteClass2 -->
-      </class> <!-- testNGDemo.TestngDemo2 -->
-    </test> <!-- Regression -->
-  </suite> <!-- Automation-Suite -->
+        </test-method> <!-- tearDwon -->
+      </class> <!-- com.mycompany.selenium.WebTableToExcel -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

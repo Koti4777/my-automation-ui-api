@@ -10,7 +10,7 @@ public class SortArrayLogic {
 
 		
 		int[] intArray = new int[] {1,5,2,4,8,9,0};
-		String[] intArray1 =   {"One", "two","three","four"};
+		String[] intArray1 =   {"one", "two","three","four"};
 		int[] intArray2 = new int[5];
 		int temp=0;
 		
@@ -33,7 +33,7 @@ public class SortArrayLogic {
 		}
 		
 		Arrays.sort(intArray1, Collections.reverseOrder());
-		
+		System.out.println(Arrays.toString(intArray1));
 	}
 
 }

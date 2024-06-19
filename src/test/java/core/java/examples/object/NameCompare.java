@@ -8,7 +8,7 @@ public class NameCompare implements Comparator<StudentInfo> {
 	public int compare(StudentInfo s1, StudentInfo s2) {
 		// TODO Auto-generated method stub
 		
-		return s1.name.compareTo(s2.name);
+		return s1.getName().compareTo(s2.getName());
 	}
 
 }

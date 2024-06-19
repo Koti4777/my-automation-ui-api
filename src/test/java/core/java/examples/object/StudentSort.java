@@ -15,7 +15,7 @@ public class StudentSort {
 		@Override
 		public int compare(StudentInfo s1, StudentInfo s2) {
 			// TODO Auto-generated method stub
-			return s1.id-s2.id;
+			return s1.getId()-s2.getId();
 		}
 	};
 	// compare with student Id
@@ -24,7 +24,7 @@ public class StudentSort {
 		@Override
 		public int compare(StudentInfo s1, StudentInfo s2) {
 			// TODO Auto-generated method stub		
-			return s2.marks-s1.marks;// desc order
+			return s2.getMarks()-s1.getMarks();// desc order
 		}
 	};
 	
@@ -44,18 +44,18 @@ public class StudentSort {
 		Collections.sort(studentRecords, marksCompare);
 
 		for (StudentInfo stu:studentRecords) {
-			System.out.println(stu.id+"---"+stu.name+"---"+stu.marks);
+			System.out.println(stu.getId()+"---"+stu.getName()+"---"+stu.getMarks());
 		}
 		System.out.println("Sort by Name");
 		Collections.sort(studentRecords, new NameCompare());
 		for (StudentInfo stu:studentRecords) {
-			System.out.println(stu.id+"---"+stu.name+"---"+stu.marks);
+			System.out.println(stu.getId()+"---"+stu.getName()+"---"+stu.getMarks());
 		}
 
 		System.out.println("Sort by ID");
 		Collections.sort(studentRecords, idCompare);
 		for (StudentInfo stu:studentRecords) {
-			System.out.println(stu.id+"---"+stu.name+"---"+stu.marks);
+			System.out.println(stu.getId()+"---"+stu.getName()+"---"+stu.getMarks());
 		}
 	}	
 

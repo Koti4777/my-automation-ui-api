@@ -3,6 +3,7 @@ package testNGDemo;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -37,25 +38,21 @@ public void afterSuite() {
 }
 	@Test
 	public void test1Class1() {
-		//Assert.assertEquals(false, false);
-		// test = report.createTest("Demo");
-		//test.log(Status.PASS, "test 1");
+		
 		
 		System.out.println("Test 1 in class 1");
 	}
 	
 	@Test
 	public void test2Class1() {
-		//Assert.assertEquals(false, false);
-		//test.log(Status.PASS, "test 1");
+		
 		System.out.println("Test 2 in class 1");
 	}
 	
 	@Test
 	public void test3Class1() {
-		//Assert.assertEquals(false, false);
-		//test.log(Status.PASS, "test 1");
-		System.out.println("Test 3 in class 1");
+		
+		Assert.assertEquals(false, true, "Failed demo case");
 	}
 	
 	@BeforeClass

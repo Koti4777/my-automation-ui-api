@@ -32,13 +32,14 @@ public class TextBoxOperations {
 	//textBox.submitButton.click();
 	}
 	
-	public File takeScreenShot() throws IOException {
+	public String takeScreenShot() throws IOException {
 		File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd-hh-mm-ss");
 		long currentTime = System.currentTimeMillis();
 		String fileName = format.format(currentTime);
-		File destinationPath = new File(System.getProperty("user.dir")+"//outputs//"+fileName+".png");
-		FileUtils.copyFile(screenshotFile,destinationPath);
+		String destinationPath = System.getProperty("user.dir")+"//outputs//"+fileName+".png";
+		File destination = new File(destinationPath);
+		FileUtils.copyFile(screenshotFile,destination);
 		return destinationPath;
 	}
 }

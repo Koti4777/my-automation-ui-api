@@ -2,14 +2,14 @@ package com.mycompany.automation;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import com.mycompany.reports.ExtentManager;
 
 public class TestNGClass1 {
 
-	 @BeforeClass
+	 @BeforeSuite
 	  public void beforeSuite() {
 	    ExtentManager.setExtent();
 	  }

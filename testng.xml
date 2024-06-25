@@ -9,6 +9,7 @@
 			<class name="testNGDemo.TestNGDemo" />
 			<class name="testNGDemo.TestngDemo1" />
 			<class name="testNGDemo.TestngDemo2" />
+			<class name ="com.mycompany.selenium.DemoQATest1"/>
 		</classes>
 	</test>
 	<test name="Regression">

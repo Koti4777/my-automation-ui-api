@@ -11,7 +11,7 @@ public class TestNGClass1 {
 
 	 @BeforeClass
 	  public void beforeSuite() {
-	    ExtentManager.setReport();
+	    ExtentManager.setExtent();
 	  }
 
 	  @AfterSuite

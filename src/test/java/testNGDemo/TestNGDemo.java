@@ -1,5 +1,8 @@
 package testNGDemo;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -12,25 +15,26 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.mycompany.reports.ExtentManager;
 
 public class TestNGDemo {
 ExtentTest test;
 ExtentReports report;
-/*
- * @BeforeClass public void reportSetup(){ System.out.println("Hello world!");
- * report = new ExtentReports();
- * 
- * String path = System.getProperty("user.dir")+"/extentreports/"+new
- * SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(new Date())+".html";
- * ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(path); //String
- * reportPath = "TestResult/MyOwnReport_"+new
- * SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(new Date())+".html"; //
- * extentProperties.setReportPath(reportPath);
- * report.attachReporter(htmlReporter); test = report.createTest("Demo");
- * 
- * }
- */
-	
+
+
+ 
+@BeforeSuite
+public void beforeSuite() {
+  ExtentManager.setExtent();
+  System.out.println("SetExtent exeucted");
+}
+
+@AfterSuite
+public void afterSuite() {
+ // service.shutdown();
+  ExtentManager.endReport();
+  System.out.println("End report exeucted");
+}
 	@Test
 	public void test1Class1() {
 		//Assert.assertEquals(false, false);

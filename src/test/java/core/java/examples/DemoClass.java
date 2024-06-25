@@ -12,14 +12,9 @@ public class DemoClass {
 		Date date = new Date();
 		System.out.println(date);
 		System.out.println(dateFormat.format(currentDate));
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
+			
 		System.out.println(dateFormat.format(date));
-		
+		System.out.println(new SimpleDateFormat("yyyy-MM-dd-HH:mm:ss").format(new Date()));
+		System.out.println(System.getProperty("user.dir")+"//extentreports//"+new SimpleDateFormat("yyyy-MM-dd-hh-mm-ss").format(new Date())+".html");
 	}
 }

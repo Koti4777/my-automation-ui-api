@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.mycompany.selenium.WebElementsInteraction">
+      <class name="com.mycompany.selenium.DemoQATest1">
         <methods>
-          <include name="initiateBroswer"/>
-          <include name="iFrameInteraction"/>
-          <include name="tearDwon"/>
+          <include name="fillTheForm"/>
+          <include name="navigateToUrl"/>
+          <include name="close"/>
         </methods>
-      </class> <!-- com.mycompany.selenium.WebElementsInteraction -->
+      </class> <!-- com.mycompany.selenium.DemoQATest1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

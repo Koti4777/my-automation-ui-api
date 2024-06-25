@@ -37,12 +37,9 @@ public class Driver {
 				options.addArguments("--headless");
 				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver(options);	
-				
-
-
 			}
 		}
-
-	return driver;
+	//	WebDriverDispatcher disp = new WebDriverDispatcher(driver);
+		return driver;
 	}
 }

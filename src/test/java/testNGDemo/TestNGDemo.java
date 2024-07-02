@@ -1,8 +1,5 @@
 package testNGDemo;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -16,45 +13,46 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import com.mycompany.reports.ExtentManager;
+import com.mycompany.reports.ExtentReportListener;
 
-public class TestNGDemo {
-ExtentTest test;
-ExtentReports report;
+public class TestNGDemo{
+	ExtentTest test;
+	ExtentReports report;
 
 
- 
-@BeforeSuite
-public void beforeSuite() {
-  ExtentManager.setExtent();
-  System.out.println("SetExtent exeucted");
-}
 
-@AfterSuite
-public void afterSuite() {
- // service.shutdown();
-  ExtentManager.endReport();
-  System.out.println("End report exeucted");
-}
+	@BeforeSuite
+	public void beforeSuite() {
+		ExtentManager.setExtent();
+		System.out.println("SetExtent exeucted");
+	}
+
+	@AfterSuite
+	public void afterSuite() {
+		// service.shutdown();
+		ExtentManager.endReport();
+		System.out.println("End report exeucted");
+	}
 	@Test
 	public void test1Class1() {
+
 		
-		
-		System.out.println("Test 1 in class 1");
 	}
-	
+
 	@Test
 	public void test2Class1() {
-		
+
 		System.out.println("Test 2 in class 1");
 	}
-	
+
 	@Test
-	public void test3Class1() {
-		
-		Assert.assertEquals(false, true, "Failed demo case");
+	public void test3Class1() { 
+
+		Assert.assertEquals("Completed", "Accepted", "Verification of the status");
 	}
-	
+
 	@BeforeClass
 	public void beforeClassTestClassOne() {
 		System.out.println("Before class Demo class 1");
@@ -64,22 +62,14 @@ public void afterSuite() {
 	public void afterClassTestClassOne() {
 		System.out.println("After class Demo Class 1");
 	}
-	
-	@BeforeSuite
-	public void beforeSuiteTest() {
-		System.out.println("Before suite demo class 1");
-	}
-	
-	@AfterSuite
-	public void AfterSuiteTest() {
-		System.out.println("After suite demo class 1");
-	}
-	
+
+
+
 	@BeforeMethod
 	public void beforeMethodClassone(){
 		System.out.println("Before method Demo Class 1");
 	}
-	
+
 	@AfterMethod
 	public void afterMethodClassOne() {
 		System.out.println("After Method Demo Class 1");
@@ -92,5 +82,5 @@ public void afterSuite() {
 	public void afterTestClassone(){
 		System.out.println("After test Demo Class 1");
 	}
-	
+
 }

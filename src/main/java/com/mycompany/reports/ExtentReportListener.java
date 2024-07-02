@@ -14,12 +14,16 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import com.mycompany.automation.pages.operations.CommonOperations;
 import com.mycompany.automation.pages.operations.TextBoxOperations;
 
 public class ExtentReportListener extends ExtentManager implements ITestListener {
 	TextBoxOperations textBoxOperations = new TextBoxOperations();
+	CommonOperations commonOperations = new CommonOperations();
 	public void onTestStart(ITestResult result) {
 	   test = extent.createTest(result.getName());
+	   test.log(Status.INFO, result.getName()+"--Test Execution Started");
+	  
 	  }
 	
 	public void onTestSuccess(ITestResult result) {
@@ -35,7 +39,7 @@ public class ExtentReportListener extends ExtentManager implements ITestListener
 		      test.log(Status.FAIL,
 		          MarkupHelper.createLabel(result.getThrowable() + " - Test Case Failed", ExtentColor.RED));
 		      try {
-				test.addScreenCaptureFromPath(textBoxOperations.takeScreenShot());
+				test.addScreenCaptureFromPath(commonOperations.takeScreenShot());
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

@@ -6,21 +6,12 @@
   </listeners>
   <test thread-count="5" name="Sanity(failed)">
     <classes>
-      <class name="com.mycompany.selenium.DemoQATest1">
-        <methods>
-          <include name="fillTheForm"/>
-          <include name="navigateToUrl"/>
-          <include name="close"/>
-        </methods>
-      </class> <!-- com.mycompany.selenium.DemoQATest1 -->
       <class name="testNGDemo.TestNGDemo">
         <methods>
-          <include name="beforeSuiteTest"/>
           <include name="beforeTestClassone"/>
           <include name="beforeSuite"/>
           <include name="beforeMethodClassone"/>
           <include name="afterMethodClassOne"/>
-          <include name="AfterSuiteTest"/>
           <include name="test3Class1"/>
           <include name="beforeClassTestClassOne"/>
           <include name="afterSuite"/>

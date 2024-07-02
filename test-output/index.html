@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods, 2 failed,   8 passed</span>
+                    <span class="method-stats">9 methods, 1 failed,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -100,11 +100,6 @@
                       <a href="#" panel-name="suite-Automation_Suite" class="show-methods failed suite-Automation_Suite"> (show)</a> <!-- show-methods failed suite-Automation_Suite -->
                     </span>
                     <div class="method-list-content failed suite-Automation_Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Automation_Suite" title="com.mycompany.selenium.DemoQATest1" class="method navigator-link" hash-for-method="fillTheForm">fillTheForm</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Automation_Suite" title="testNGDemo.TestNGDemo" class="method navigator-link" hash-for-method="test3Class1">test3Class1</a> <!-- method navigator-link -->
@@ -146,12 +141,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Automation_Suite" title="testNGDemo.TestngDemo2" class="method navigator-link" hash-for-method="testcaseTwoClass2">testcaseTwoClass2</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Automation_Suite" title="testNGDemo.TestngDemo1" class="method navigator-link" hash-for-method="testcaseTwoClass2">testcaseTwoClass2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Automation_Suite" title="testNGDemo.TestngDemo1" class="method navigator-link" hash-for-method="testcaseTwoClass2">testcaseTwoClass2</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Automation_Suite" title="testNGDemo.TestngDemo2" class="method navigator-link" hash-for-method="testcaseTwoClass2">testcaseTwoClass2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -174,26 +169,6 @@
           <div class="suite-Automation_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.mycompany.selenium.DemoQATest1</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="fillTheForm">
-                  </a> <!-- fillTheForm -->
-                  <span class="method-name">fillTheForm</span>
-                  <div class="stack-trace">java.lang.AssertionError: failed case Demo expected [true] but found [false]
-	at com.mycompany.selenium.DemoQATest1.fillTheForm(DemoQATest1.java:37)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Automation_Suite-class-failed -->
-          <div class="suite-Automation_Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
               <span class="class-name">testNGDemo.TestNGDemo</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -202,8 +177,8 @@
                   <a name="test3Class1">
                   </a> <!-- test3Class1 -->
                   <span class="method-name">test3Class1</span>
-                  <div class="stack-trace">java.lang.AssertionError: Failed demo case expected [true] but found [false]
-	at testNGDemo.TestNGDemo.test3Class1(TestNGDemo.java:55)
+                  <div class="stack-trace">java.lang.AssertionError: Verification of the status expected [Accepted] but found [Completed]
+	at testNGDemo.TestNGDemo.test3Class1(TestNGDemo.java:53)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
@@ -309,7 +284,6 @@
       &lt;class name=&quot;testNGDemo.TestNGDemo&quot;/&gt;
       &lt;class name=&quot;testNGDemo.TestngDemo1&quot;/&gt;
       &lt;class name=&quot;testNGDemo.TestngDemo2&quot;/&gt;
-      &lt;class name=&quot;com.mycompany.selenium.DemoQATest1&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Sanity --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Regression&quot;&gt;
@@ -328,7 +302,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Sanity (4 classes)</span>
+                <span class="test-name">Sanity (3 classes)</span>
               </li>
               <li>
                 <span class="test-name">Regression (1 class)</span>
@@ -357,52 +331,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(10);
+data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'fillTheForm')
-data.setCell(0, 2, 'com.mycompany.selenium.DemoQATest1')
-data.setCell(0, 3, 2252);
+data.setCell(0, 1, 'test1Class1')
+data.setCell(0, 2, 'testNGDemo.TestNGDemo')
+data.setCell(0, 3, 17);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'test1Class1')
+data.setCell(1, 1, 'test3Class1')
 data.setCell(1, 2, 'testNGDemo.TestNGDemo')
-data.setCell(1, 3, 24);
+data.setCell(1, 3, 5);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'test3Class1')
-data.setCell(2, 2, 'testNGDemo.TestNGDemo')
-data.setCell(2, 3, 14);
+data.setCell(2, 1, 'testcaseOneClass1')
+data.setCell(2, 2, 'testNGDemo.TestngDemo1')
+data.setCell(2, 3, 3);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testcaseTwoClass2')
-data.setCell(3, 2, 'testNGDemo.TestngDemo1')
-data.setCell(3, 3, 8);
+data.setCell(3, 1, 'testcaseOneClass1')
+data.setCell(3, 2, 'testNGDemo.TestngDemo2')
+data.setCell(3, 3, 3);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testcaseOneClass1')
-data.setCell(4, 2, 'testNGDemo.TestngDemo2')
-data.setCell(4, 3, 6);
+data.setCell(4, 1, 'test2Class1')
+data.setCell(4, 2, 'testNGDemo.TestNGDemo')
+data.setCell(4, 3, 2);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'testcaseTwoClass2')
-data.setCell(5, 2, 'testNGDemo.TestngDemo2')
-data.setCell(5, 3, 5);
+data.setCell(5, 2, 'testNGDemo.TestngDemo1')
+data.setCell(5, 3, 2);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testcaseOneClass1')
-data.setCell(6, 2, 'testNGDemo.TestngDemo1')
-data.setCell(6, 3, 4);
+data.setCell(6, 1, 'testcaseTwoClass2')
+data.setCell(6, 2, 'testNGDemo.TestngDemo2')
+data.setCell(6, 3, 2);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'test2Class1')
-data.setCell(7, 2, 'testNGDemo.TestNGDemo')
-data.setCell(7, 3, 3);
+data.setCell(7, 1, 'testcaseTwoClass2')
+data.setCell(7, 2, 'testNGDemo.TestngDemo2')
+data.setCell(7, 3, 2);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'testcaseOneClass1')
 data.setCell(8, 2, 'testNGDemo.TestngDemo2')
 data.setCell(8, 3, 1);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'testcaseTwoClass2')
-data.setCell(9, 2, 'testNGDemo.TestngDemo2')
-data.setCell(9, 3, 1);
 window.suiteTableData['Automation_Suite']= { tableData: data, tableDiv: 'times-div-Automation_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 37 ms</span>
               <div id="times-div-Automation_Suite">
               </div> <!-- times-div-Automation_Suite -->
             </div> <!-- times-div -->
@@ -433,221 +403,193 @@ return data;
                 <span class="method-name">beforeSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
-              <div class="configuration-suite before">
-                <span class="method-name">beforeSuiteTest</span>
-                <span class="method-start">122 ms</span>
-              </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGDemo.TestngDemo1</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">beforeSuiteClass2</span>
-                <span class="method-start">123 ms</span>
+                <span class="method-start">145 ms</span>
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGDemo.TestngDemo2</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">beforeSuiteClass2</span>
-                <span class="method-start">123 ms</span>
+                <span class="method-start">145 ms</span>
               </div> <!-- configuration-suite before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.mycompany.selenium.DemoQATest1</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">navigateToUrl</span>
-                <span class="method-start">127 ms</span>
-              </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGDemo.TestNGDemo</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTestClassone</span>
-                <span class="method-start">28660 ms</span>
+                <span class="method-start">149 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGDemo.TestngDemo1</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTestClass2</span>
-                <span class="method-start">28661 ms</span>
+                <span class="method-start">150 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGDemo.TestngDemo2</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTestClass2</span>
-                <span class="method-start">28661 ms</span>
+                <span class="method-start">150 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGDemo.TestNGDemo</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClassTestClassOne</span>
-                <span class="method-start">28675 ms</span>
+                <span class="method-start">168 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethodClassone</span>
-                <span class="method-start">28687 ms</span>
+                <span class="method-start">180 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test1Class1</span>
-                <span class="method-start">28688 ms</span>
+                <span class="method-start">182 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethodClassOne</span>
-                <span class="method-start">28731 ms</span>
+                <span class="method-start">204 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethodClassone</span>
-                <span class="method-start">28737 ms</span>
+                <span class="method-start">205 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test2Class1</span>
-                <span class="method-start">28738 ms</span>
+                <span class="method-start">205 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethodClassOne</span>
-                <span class="method-start">28745 ms</span>
+                <span class="method-start">210 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethodClassone</span>
-                <span class="method-start">28745 ms</span>
+                <span class="method-start">210 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">test3Class1</span>
-                <span class="method-start">28746 ms</span>
+                <span class="method-start">210 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethodClassOne</span>
-                <span class="method-start">29132 ms</span>
+                <span class="method-start">435 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClassTestClassOne</span>
-                <span class="method-start">29136 ms</span>
+                <span class="method-start">437 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGDemo.TestngDemo1</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClassTest</span>
-                <span class="method-start">29141 ms</span>
+                <span class="method-start">440 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testcaseOneClass1</span>
-                <span class="method-start">29142 ms</span>
+                <span class="method-start">441 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testcaseTwoClass2</span>
-                <span class="method-start">29150 ms</span>
+                <span class="method-start">447 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClassTest</span>
-                <span class="method-start">29166 ms</span>
+                <span class="method-start">451 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGDemo.TestngDemo2</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClassTest</span>
-                <span class="method-start">29166 ms</span>
+                <span class="method-start">452 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testcaseOneClass1</span>
-                <span class="method-start">29167 ms</span>
+                <span class="method-start">452 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testcaseTwoClass2</span>
-                <span class="method-start">29177 ms</span>
+                <span class="method-start">457 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClassTest</span>
-                <span class="method-start">29196 ms</span>
+                <span class="method-start">461 ms</span>
               </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.mycompany.selenium.DemoQATest1</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">fillTheForm</span>
-                <span class="method-start">29199 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">close</span>
-                <span class="method-start">31663 ms</span>
-              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGDemo.TestNGDemo</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">afterTestClassone</span>
-                <span class="method-start">32419 ms</span>
+                <span class="method-start">462 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGDemo.TestngDemo1</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">32419 ms</span>
+                <span class="method-start">462 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGDemo.TestngDemo2</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">32420 ms</span>
+                <span class="method-start">463 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTestClass2</span>
-                <span class="method-start">32808 ms</span>
+                <span class="method-start">685 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClassTest</span>
-                <span class="method-start">32809 ms</span>
+                <span class="method-start">686 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testcaseOneClass1</span>
-                <span class="method-start">32810 ms</span>
+                <span class="method-start">686 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testcaseTwoClass2</span>
-                <span class="method-start">32812 ms</span>
+                <span class="method-start">688 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClassTest</span>
-                <span class="method-start">32813 ms</span>
+                <span class="method-start">691 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">32813 ms</span>
+                <span class="method-start">691 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGDemo.TestNGDemo</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
-                <span class="method-name">AfterSuiteTest</span>
-                <span class="method-start">32826 ms</span>
-              </div> <!-- configuration-suite after -->
-              <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">32827 ms</span>
+                <span class="method-start">722 ms</span>
               </div> <!-- configuration-suite after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGDemo.TestngDemo1</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuiteClass2</span>
-                <span class="method-start">33211 ms</span>
+                <span class="method-start">1027 ms</span>
               </div> <!-- configuration-suite after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNGDemo.TestngDemo2</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuiteClass2</span>
-                <span class="method-start">33211 ms</span>
+                <span class="method-start">1029 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

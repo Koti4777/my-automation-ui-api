@@ -12,7 +12,7 @@ import org.openqa.selenium.WebDriver;
 import com.mycompany.automation.pages.elements.TextBox;
 import com.mycompany.utils.Driver;
 
-public class TextBoxOperations {
+public class TextBoxOperations extends CommonOperations {
 	WebDriver driver;
 	TextBox textBox = new TextBox();
 	
@@ -32,14 +32,4 @@ public class TextBoxOperations {
 	//textBox.submitButton.click();
 	}
 	
-	public String takeScreenShot() throws IOException {
-		File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd-hh-mm-ss");
-		long currentTime = System.currentTimeMillis();
-		String fileName = format.format(currentTime);
-		String destinationPath = System.getProperty("user.dir")+"//outputs//"+fileName+".png";
-		File destination = new File(destinationPath);
-		FileUtils.copyFile(screenshotFile,destination);
-		return destinationPath;
-	}
 }

@@ -3,6 +3,7 @@ package core.java.examples.io;
 import java.io.File;
 import java.io.IOException;
 import java.util.Iterator;
+import java.util.Random;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -62,6 +63,26 @@ public class JSONReader {
 	     }
 	}
 	
+	public static String randomID(int length) {
+		StringBuilder stringBuilder = new StringBuilder();
+		final String chars = "1234567890";
+		Random random = new Random();
+		for (int i=0;i<length;i++) {
+			char charcter = chars.charAt(random.nextInt(chars.length()));
+			stringBuilder.append(charcter);
+		}
+		return stringBuilder.toString();
+	}
+	public static String randomName(int length) {
+		StringBuilder stringBuilder = new StringBuilder();
+		final String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		Random random = new Random();
+		for (int i=0;i<=length;i++) {
+			char charcter = chars.charAt(random.nextInt(chars.length()));
+			stringBuilder.append(charcter);
+		}
+		return stringBuilder.toString();
+	}
 	public static void updateOrderJOSN() {
 		String path = System.getProperty("user.dir")+"//resources//payloads//CreateOrder.json";
 		 ObjectMapper mapper = new ObjectMapper();
@@ -70,9 +91,11 @@ public class JSONReader {
 	             File inputfile = new File(path);
 	             
 	             JsonNode rootNode = mapper.readTree(inputfile);
-	             ObjectNode objectNode = (ObjectNode) rootNode;
-	             objectNode.put("toolId", "1989");
-	             objectNode.put("customerName", "UpdatedViaScript");
+	             ObjectNode objectNode = (ObjectNode) rootNode;  
+	           
+	           
+	             objectNode.put("toolId", randomID(4));
+	             objectNode.put("customerName", randomName(10));
 	             objectNode.put("comment", "updated via script using Jackson lib");
 	             mapper.writeValue(inputfile, rootNode);
 	            System.out.println("create ordr updated");

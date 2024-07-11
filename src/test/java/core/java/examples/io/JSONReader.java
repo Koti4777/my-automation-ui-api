@@ -110,5 +110,6 @@ public class JSONReader {
 		System.out.println("Create Order details"+"\n");
 		readOrderJOSN();
 		updateOrderJOSN();
+		//commit 1
 	}
 }

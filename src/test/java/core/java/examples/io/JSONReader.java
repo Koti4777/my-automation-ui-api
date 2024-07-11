@@ -6,7 +6,7 @@ import java.util.Iterator;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.ObjectReader;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 
 public class JSONReader {
 	public static void readEmployeeDetails() {
@@ -17,6 +17,7 @@ public class JSONReader {
 	             File jsonInputFile = new File(path);
 	             
 	             JsonNode rootNode = mapper.readTree(jsonInputFile);
+	             System.out.println(rootNode.has("emp_id"));
 	             // read employee id
 	             JsonNode empId = rootNode.path("emp_id");
 	             System.out.println(empId.intValue());
@@ -47,7 +48,7 @@ public class JSONReader {
 	             
 	             JsonNode rootNode = mapper.readTree(inputfile);
 	           
-	            // System.out.println(node.toString());
+	            System.out.println(rootNode);
 	             // read tool ID
 	            String toolId = rootNode.get("toolId").asText();
 	            String customerName = rootNode.get("customerName").asText();
@@ -60,9 +61,31 @@ public class JSONReader {
 	             e.printStackTrace();
 	     }
 	}
+	
+	public static void updateOrderJOSN() {
+		String path = System.getProperty("user.dir")+"//resources//payloads//CreateOrder.json";
+		 ObjectMapper mapper = new ObjectMapper();
+	     try {
+	             // reading json input from the file and mapping to object
+	             File inputfile = new File(path);
+	             
+	             JsonNode rootNode = mapper.readTree(inputfile);
+	             ObjectNode objectNode = (ObjectNode) rootNode;
+	             objectNode.put("toolId", "1989");
+	             objectNode.put("customerName", "UpdatedViaScript");
+	             objectNode.put("comment", "updated via script using Jackson lib");
+	             mapper.writeValue(inputfile, rootNode);
+	            System.out.println("create ordr updated");
+	           
+	     } catch (IOException e) {
+	             // TODO Auto-generated catch block
+	             e.printStackTrace();
+	     }
+	}
 	public static void main(String[] args) {
 		readEmployeeDetails();
 		System.out.println("Create Order details"+"\n");
 		readOrderJOSN();
+		updateOrderJOSN();
 	}
 }

@@ -1,5 +1,1 @@
-{
- "toolId": 4643,
- "customerName": "Kotewararao1",
- "comment": "new order created with customer Id 4643 from restAssured"
-}
+{"toolId":"1989","customerName":"UpdatedViaScript","comment":"updated via script using Jackson lib"}

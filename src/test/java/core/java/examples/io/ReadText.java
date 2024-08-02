@@ -1,9 +1,9 @@
 package core.java.examples.io;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
+import java.io.FileInputStream;
 import java.io.FileReader;
-import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class ReadText {
 
@@ -13,6 +13,15 @@ public class ReadText {
 		String line;
 		try(BufferedReader reader = new BufferedReader(new FileReader(filePath))){
 			while((line=reader.readLine())!=null) {
+				System.out.println(line);
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+		try(FileInputStream stream = new FileInputStream(filePath); InputStreamReader ist = new InputStreamReader(stream); BufferedReader br = new BufferedReader(ist)){
+			while((line=br.readLine())!=null) {
 				System.out.println(line);
 			}
 		}catch(Exception e) {

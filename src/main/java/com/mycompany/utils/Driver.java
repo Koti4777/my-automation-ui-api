@@ -31,12 +31,15 @@ public class Driver {
 				WebDriverManager.edgedriver().setup();
 				driver = new EdgeDriver();
 				break;
-			default:
+			case "Headless":
 				System.out.println("came here");
 				ChromeOptions options = new ChromeOptions();
 				options.addArguments("--headless");
 				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver(options);	
+				break;
+				default:
+					throw new IllegalArgumentException("Unsupported broswer");
 			}
 		}
 	//	WebDriverDispatcher disp = new WebDriverDispatcher(driver);

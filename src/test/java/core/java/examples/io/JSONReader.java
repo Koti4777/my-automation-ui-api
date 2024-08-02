@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.Random;
 
+import org.apache.commons.lang3.RandomStringUtils;
+
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -74,6 +76,7 @@ public class JSONReader {
 		return stringBuilder.toString();
 	}
 	public static String randomName(int length) {
+	//	System.out.println(RandomStringUtils.randomAlphabetic(10, 10)+" using RandomStringUtils class form Apachi");
 		StringBuilder stringBuilder = new StringBuilder();
 		final String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 		Random random = new Random();

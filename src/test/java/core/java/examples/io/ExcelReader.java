@@ -16,13 +16,13 @@ public class ExcelReader {
 
 	public static void readExcelData() {
 	String path = System.getProperty("user.dir")+"//resources//testdata/KT-Plan.xlsx";
-		try {
-			FileInputStream inputStream = new FileInputStream(new File(path));
+		try (FileInputStream inputStream = new FileInputStream(new File(path))){
+			
 			XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 			XSSFSheet sheet = workbook.getSheet("KT Plan");
 			Row row;
 			Cell cell;
-			
+			inputStream.close();
 			Iterator<Row> rowIterator = sheet.iterator();
 			while(rowIterator.hasNext()) {
 				row = rowIterator.next();
@@ -34,6 +34,7 @@ public class ExcelReader {
 					System.out.print(text+"\t");
 				}
 				System.out.println();
+				
 			}
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -41,6 +42,8 @@ public class ExcelReader {
 		}catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}finally {
+			//inputStream.close();
 		}
 	}
 	

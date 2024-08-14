@@ -15,7 +15,7 @@ public class CastingDemo {
 	WebDriver driver = new ChromeDriver();
 	
 	File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-	
+	//updated comments from feature
 		
 		
 

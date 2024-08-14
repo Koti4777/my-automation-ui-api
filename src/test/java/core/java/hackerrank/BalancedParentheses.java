@@ -9,7 +9,7 @@ public class BalancedParentheses {
 
 		System.out.println(isBalanced("({[]})"));
 		System.out.println(isBalanced("}({[]})"));
-		System.out.println(isBalanced("({[]})("));
+		System.out.println(isBalanced("({[]})("));//updated from review
 	}
 
 	public static boolean isBalanced(String input) {

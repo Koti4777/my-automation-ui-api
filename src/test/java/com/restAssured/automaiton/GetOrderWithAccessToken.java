@@ -1,12 +1,12 @@
 package com.restAssured.automaiton;
 
 import java.io.File;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import org.testng.reporters.Files;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -88,9 +88,9 @@ public class GetOrderWithAccessToken {
 	}
 	@Test
 	public static void readingJSONFile() {
-		
-		try (FileReader fileReader = new FileReader("src/main/resources/responses/GetOrder.json")) {
-		    String getOrderBody = fileReader.toString().formatted();
+		File filePath = new File("src/main/resources/responses/GetOrder.json"); 
+		try  {
+		    String getOrderBody = Files.readFile(filePath);
 		    System.out.println("------------getOrderBodyFromJSONFile");
 		    System.out.println(getOrderBody);
 		} catch (IOException e) {

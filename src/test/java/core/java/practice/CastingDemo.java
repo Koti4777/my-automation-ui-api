@@ -15,7 +15,17 @@ public class CastingDemo {
 	WebDriver driver = new ChromeDriver();
 	
 	File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+<<<<<<< HEAD
 	//updated comments from feature
+=======
+	
+	String i = "89";
+	
+	
+	
+	
+	
+>>>>>>> 5d08ce8ef505b5ea09c448ea971e0942d6154103
 		
 		
 

@@ -1,4 +1,4 @@
-package core.java.hackerrank.arrys;
+package core.java.hackerrank;
 import java.io.*;
 import java.math.*;
 import java.security.*;

@@ -16,6 +16,12 @@ public class CastingDemo {
 	
 	File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 	
+	String i = "89";
+	
+	
+	
+	
+	
 		
 		
 

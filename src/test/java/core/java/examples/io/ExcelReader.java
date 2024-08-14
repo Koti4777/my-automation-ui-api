@@ -22,7 +22,6 @@ public class ExcelReader {
 			XSSFSheet sheet = workbook.getSheet("KT Plan");
 			Row row;
 			Cell cell;
-			inputStream.close();
 			Iterator<Row> rowIterator = sheet.iterator();
 			while(rowIterator.hasNext()) {
 				row = rowIterator.next();

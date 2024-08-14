@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="5" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-06T19:31:57 IST" name="Default suite" finished-at="2024-08-06T19:32:08 IST" duration-ms="11509">
+    <groups>
+    </groups>
+    <test started-at="2024-08-06T19:31:57 IST" name="Default test" finished-at="2024-08-06T19:32:08 IST" duration-ms="11509">
+      <class name="com.restAssured.automaiton.GetOrderWithAccessToken">
+        <test-method is-config="true" signature="connect()[pri:0, instance:com.restAssured.automaiton.GetOrderWithAccessToken@7205765b]" started-at="2024-08-06T19:31:57 IST" name="connect" finished-at="2024-08-06T19:31:59 IST" duration-ms="2491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connect -->
+        <test-method signature="createAccessToken()[pri:0, instance:com.restAssured.automaiton.GetOrderWithAccessToken@7205765b]" started-at="2024-08-06T19:31:59 IST" name="createAccessToken" finished-at="2024-08-06T19:32:06 IST" duration-ms="6292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccessToken -->
+        <test-method signature="getOrder()[pri:0, instance:com.restAssured.automaiton.GetOrderWithAccessToken@7205765b]" started-at="2024-08-06T19:32:06 IST" name="getOrder" finished-at="2024-08-06T19:32:07 IST" duration-ms="1413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getOrder -->
+        <test-method signature="getOrderJSONFile()[pri:0, instance:com.restAssured.automaiton.GetOrderWithAccessToken@7205765b]" started-at="2024-08-06T19:32:07 IST" name="getOrderJSONFile" finished-at="2024-08-06T19:32:08 IST" duration-ms="1216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getOrderJSONFile -->
+        <test-method signature="readingJSONFile()[pri:0, instance:com.restAssured.automaiton.GetOrderWithAccessToken@7205765b]" started-at="2024-08-06T19:32:08 IST" name="readingJSONFile" finished-at="2024-08-06T19:32:08 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readingJSONFile -->
+      </class> <!-- com.restAssured.automaiton.GetOrderWithAccessToken -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

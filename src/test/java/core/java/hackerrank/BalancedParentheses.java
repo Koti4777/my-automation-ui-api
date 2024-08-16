@@ -7,9 +7,12 @@ public class BalancedParentheses {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		System.out.println(isBalanced("({[]})"));
-		System.out.println(isBalanced("}({[]})"));
-		System.out.println(isBalanced("({[]})("));//updated from review
+//		System.out.println(isBalanced("({[]})"));
+//		System.out.println(isBalanced("}({[]})"));
+//		System.out.println(isBalanced("({[]})("));//updated from review
+//		System.out.println(isBalanced("[]"));//updated from review
+//		System.out.println(isBalanced("{}"));//updated from review
+		System.out.println(isBalanced("()"));//updated from review
 	}
 
 	public static boolean isBalanced(String input) {
@@ -24,7 +27,7 @@ public class BalancedParentheses {
 					return false;
 				}
 				char topchar = stackBox.pop();
-				if ((ch=='(' && topchar!=')') ||(ch=='(' && topchar!='}')|| (ch=='(' && topchar!=']')) {
+				if ((ch==')' && topchar!='(') ||(ch==']' && topchar!='[')|| (ch=='}' && topchar!='{')) {
 					return false;
 				}
 			}

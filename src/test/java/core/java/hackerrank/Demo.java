@@ -3,36 +3,30 @@ package core.java.hackerrank;
 import java.util.Stack;
 
 public class Demo {
-    public static boolean isBalanced(String str) {
-        Stack<Character> stack = new Stack<>(); 
 
 
-        for (char ch : str.toCharArray()) {
-            if (ch == '(' || ch == '{' || ch == '[') {
-                stack.push(ch);
-            } else if (ch == ')' || ch == '}' || ch == ']') {
-                if (stack.isEmpty()) {
-                    return  false; // Unbalanced
-                }
-                char topChar = stack.pop();
-                if ((ch == ')' && topChar != '(') ||
-                    (ch == '}' && topChar != '{') ||
-                    (ch == ']' && topChar != '[')) {
-                    return false; // Unbalanced
-                }
-            }
-        }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	System.out.println(repeatStringCount("aba",10));
+		
+	}
 
-        return stack.isEmpty(); // Balanced if stack is empty
-    }
+	public static long repeatStringCount(String input, long n) {
 
-    public static void main(String[] args) {
-        String str = "{()}";
-        if (isBalanced(str)) {
-            System.out.println("Balanced");
-        } else {
-            System.out.println("Unbalanced");
+		StringBuilder sbr = new StringBuilder();
+		long charCount=0;
+		while (sbr.length()<n) {
+			sbr.append(input);
+		}
+		System.out.println(sbr.toString());
+		for (int i = 0;i<n;i++) {
+			if (sbr.charAt(i)=='a') {
+				charCount++;
+			}
+		}
 
-        }
-    }
+		return charCount;
+
+	}
 }
+

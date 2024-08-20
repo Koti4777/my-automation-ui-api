@@ -26,7 +26,7 @@ public class FindAllLinks {
 
 	}
 	@Test
-	public void staleDemo() {
+	public void findAllLinks() {
 		try {
 			driver.get("https://demoqa.com/");
 			List<WebElement> links = driver.findElements(By.tagName("a"));

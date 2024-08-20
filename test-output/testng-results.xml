@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-20T19:40:51 IST" name="Default suite" finished-at="2024-08-20T19:41:23 IST" duration-ms="31216">
+  <suite started-at="2024-08-20T20:09:18 IST" name="Default suite" finished-at="2024-08-20T20:09:42 IST" duration-ms="24073">
     <groups>
     </groups>
-    <test started-at="2024-08-20T19:40:51 IST" name="Default test" finished-at="2024-08-20T19:41:23 IST" duration-ms="31216">
+    <test started-at="2024-08-20T20:09:18 IST" name="Default test" finished-at="2024-08-20T20:09:42 IST" duration-ms="24073">
       <class name="com.mycompany.selenium.BrokenURLs">
-        <test-method is-config="true" signature="initiateBroswer()[pri:0, instance:com.mycompany.selenium.BrokenURLs@6283d8b8]" started-at="2024-08-20T19:40:51 IST" name="initiateBroswer" finished-at="2024-08-20T19:40:56 IST" duration-ms="4262" status="PASS">
+        <test-method is-config="true" signature="initiateBroswer()[pri:0, instance:com.mycompany.selenium.BrokenURLs@6283d8b8]" started-at="2024-08-20T20:09:18 IST" name="initiateBroswer" finished-at="2024-08-20T20:09:21 IST" duration-ms="3002" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateBroswer -->
-        <test-method signature="staleDemo()[pri:0, instance:com.mycompany.selenium.BrokenURLs@6283d8b8]" started-at="2024-08-20T19:40:56 IST" name="staleDemo" finished-at="2024-08-20T19:41:22 IST" duration-ms="26394" status="PASS">
+        <test-method signature="staleDemo()[pri:0, instance:com.mycompany.selenium.BrokenURLs@6283d8b8]" started-at="2024-08-20T20:09:21 IST" name="staleDemo" finished-at="2024-08-20T20:09:41 IST" duration-ms="20409" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- staleDemo -->
-        <test-method is-config="true" signature="tearDwon()[pri:0, instance:com.mycompany.selenium.BrokenURLs@6283d8b8]" started-at="2024-08-20T19:41:22 IST" name="tearDwon" finished-at="2024-08-20T19:41:23 IST" duration-ms="491" status="PASS">
+        <test-method is-config="true" signature="tearDwon()[pri:0, instance:com.mycompany.selenium.BrokenURLs@6283d8b8]" started-at="2024-08-20T20:09:41 IST" name="tearDwon" finished-at="2024-08-20T20:09:42 IST" duration-ms="614" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDwon -->

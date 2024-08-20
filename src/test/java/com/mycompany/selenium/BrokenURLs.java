@@ -27,31 +27,31 @@ public class BrokenURLs {
 
 	}
 	@Test
-	public void staleDemo() {
+	public void brokenUrlDemo() {
 		try {
 			driver.get("https://demoqa.com/broken");
 			List<WebElement> links = driver.findElements(By.tagName("a"));
 			String url;
 			for (WebElement link:links) {
 				url = link.getAttribute("href");
-				if(url!=null && !url.isEmpty()) {
-				
+				if (url!=null && !url.isEmpty()) {
 					
-					try {
-						URL urlObj = new URL(url);
-						HttpURLConnection con = (HttpURLConnection) urlObj.openConnection();
-						 int responseCode = con.getResponseCode();
-
-	                        if (responseCode != 200) {
-	                            System.out.println(url + " - " + responseCode);
-	                        }
-	                        con.disconnect();
-						
-					}catch(Exception e) {
-						
-					}
+				try {
+					URL urlObj = new URL(url);
+					HttpURLConnection con = (HttpURLConnection) urlObj.openConnection();
+				con.setRequestMethod("HEAD");
+				if (con.getResponseCode()!=200) {
+					System.out.println(url+"---"+con.getResponseCode());
 				}
+				con.disconnect();
+				}catch(Exception e) {
+					
+				}
+					
+				}
+				
 			}
+		
 		}catch(Exception e) {
 			e.printStackTrace();
 			System.out.println("Exception --- "+ e);

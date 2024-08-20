@@ -12,6 +12,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.mycompany.utils.Driver;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BrokenURLs {
@@ -19,16 +21,21 @@ public class BrokenURLs {
 	WebDriver driver;
 
 
-	@BeforeTest
-	public void initiateBroswer() {
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-
-	}
+	
+	  @BeforeTest public void initiateBroswer() {
+			/*
+			 * WebDriverManager.chromedriver().setup(); driver = new ChromeDriver();
+			 * driver.manage().window().maximize();
+			 */
+		  driver = Driver.getInstance();
+	  
+	  }
+	 
+	
 	@Test
 	public void brokenUrlDemo() {
 		try {
+			
 			driver.get("https://demoqa.com/broken");
 			List<WebElement> links = driver.findElements(By.tagName("a"));
 			String url;
@@ -39,7 +46,8 @@ public class BrokenURLs {
 				try {
 					URL urlObj = new URL(url);
 					HttpURLConnection con = (HttpURLConnection) urlObj.openConnection();
-				con.setRequestMethod("HEAD");
+					/* con.setRequestMethod("HEAD"); */
+					con.connect();
 				if (con.getResponseCode()!=200) {
 					System.out.println(url+"---"+con.getResponseCode());
 				}

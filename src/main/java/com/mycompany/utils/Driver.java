@@ -11,25 +11,29 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Driver {
 
+	
 	public static WebDriver driver;
-
+private Driver(){}
 
 	public static WebDriver getInstance() {
-		if (driver == null || ((RemoteWebDriver) driver).getSessionId() == null ) {
+		if (driver == null || ((RemoteWebDriver)driver).getSessionId() == null ) {
 
 			switch("chrome") {
 			case "chrome":
 				ChromeOptions chromeOptions = new ChromeOptions();
 				WebDriverManager.chromedriver().setup();
-				driver = new ChromeDriver(chromeOptions);								
+				driver = new ChromeDriver(chromeOptions);	
+				driver.manage().window().maximize();
 				break;
 			case "Firefox":
 				WebDriverManager.firefoxdriver().setup();
 				driver = new FirefoxDriver();
+				driver.manage().window().maximize();
 				break;
 			case "Edge":
 				WebDriverManager.edgedriver().setup();
 				driver = new EdgeDriver();
+				driver.manage().window().maximize();
 				break;
 			case "Headless":
 				System.out.println("came here");

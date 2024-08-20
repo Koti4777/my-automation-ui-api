@@ -11,6 +11,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.mycompany.utils.Driver;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class SelectMenuDemo {
@@ -20,10 +22,11 @@ public class SelectMenuDemo {
 
 	@BeforeTest
 	public void initiateBroswer() {
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-
+		/*
+		 * WebDriverManager.chromedriver().setup(); driver = new ChromeDriver();
+		 * driver.manage().window().maximize();
+		 */
+Driver.getInstance();
 	}
 	@Test
 	public void staleDemo() {

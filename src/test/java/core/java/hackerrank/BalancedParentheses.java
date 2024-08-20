@@ -7,11 +7,11 @@ public class BalancedParentheses {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-//		System.out.println(isBalanced("({[]})"));
-//		System.out.println(isBalanced("}({[]})"));
-//		System.out.println(isBalanced("({[]})("));//updated from review
-//		System.out.println(isBalanced("[]"));//updated from review
-//		System.out.println(isBalanced("{}"));//updated from review
+		System.out.println(isBalanced("({[]})"));
+		System.out.println(isBalanced("}({[]})"));
+		System.out.println(isBalanced("({[]})("));//updated from review
+		System.out.println(isBalanced("[]"));//updated from review
+		System.out.println(isBalanced("{}"));//updated from review
 		System.out.println(isBalanced("()"));//updated from review
 	}
 

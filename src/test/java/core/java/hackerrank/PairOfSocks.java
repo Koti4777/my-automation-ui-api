@@ -16,7 +16,7 @@ import static java.util.stream.Collectors.toList;
 
 public class PairOfSocks {
     public static void main(String[] args) throws IOException {
-      int[] input = {1,1,2,2,3,3};
+      int[] input = {1,1,2,2,3,3,2,3,7};
       Arrays.sort(input);
       int pairs =0;
       for (int i=0;i<input.length-1;i++) {

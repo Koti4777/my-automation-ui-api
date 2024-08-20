@@ -1,6 +1,7 @@
 package testNGDemo;
 
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -13,9 +14,7 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
 import com.mycompany.reports.ExtentManager;
-import com.mycompany.reports.ExtentReportListener;
 
 public class TestNGDemo{
 	ExtentTest test;
@@ -66,13 +65,17 @@ public class TestNGDemo{
 
 
 	@BeforeMethod
-	public void beforeMethodClassone(){
+	public void beforeMethodClassone(ITestResult result){
 		System.out.println("Before method Demo Class 1");
+		 String testName = result.getMethod().getMethodName();
+	        System.out.println("Test Name before execution: " + testName);
 	}
 
 	@AfterMethod
-	public void afterMethodClassOne() {
+	public void afterMethodClassOne(ITestResult result) {
 		System.out.println("After Method Demo Class 1");
+		 String testName = result.getMethod().getMethodName();
+	        System.out.println("Test Name after execution: " + testName);
 	}
 	@BeforeTest
 	public void beforeTestClassone(){

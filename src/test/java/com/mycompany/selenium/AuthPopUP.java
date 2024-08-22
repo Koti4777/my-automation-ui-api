@@ -45,11 +45,11 @@ public class AuthPopUP {
 		Assert.assertEquals(actualText, "Congratulations! You must have the proper credentials.");
 		
 		}catch(Exception e) {
-			e.printStackTrace();
-			System.out.println("Exception --- "+ e);
+			
 		}
 
 	}
+
 
 	@AfterTest public void tearDwon() {
 		driver.close();

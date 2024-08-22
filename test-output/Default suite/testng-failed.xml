@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.mycompany.selenium.BrokenURLs">
+      <class name="com.mycompany.selenium.JavascriptDemo">
         <methods>
-          <include name="tearDwon"/>
-          <include name="brokenUrl"/>
           <include name="initiateBroswer"/>
+          <include name="javaScriptDemo"/>
+          <include name="tearDwon"/>
         </methods>
-      </class> <!-- com.mycompany.selenium.BrokenURLs -->
+      </class> <!-- com.mycompany.selenium.JavascriptDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

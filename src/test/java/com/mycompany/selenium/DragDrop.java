@@ -43,9 +43,10 @@ public class DragDrop {
 
 		Actions action = new Actions(driver);
 		System.out.println("Before Action");
-		action.moveToElement(drag).clickAndHold().moveToElement(drop);			
+	//	action.moveToElement(drag).clickAndHold().moveToElement(drop);	
+		action.dragAndDrop(drag, drop).perform();
 		System.out.println("dropped");
-		action.doubleClick();//Double click using action item.
+		action.doubleClick().perform();//Double click using action item.
 		action.doubleClick(drop);//double click on the eliement
 		Thread.sleep(5000);
 		System.out.println("After Sleep");

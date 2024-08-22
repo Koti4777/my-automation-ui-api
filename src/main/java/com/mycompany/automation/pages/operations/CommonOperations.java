@@ -12,11 +12,11 @@ import org.openqa.selenium.WebDriver;
 import com.mycompany.utils.Driver;
 
 public class CommonOperations {
-	WebDriver driver;
+	static WebDriver driver;
 	public CommonOperations() {
 		this.driver= Driver.getInstance();
 	}
-	public String takeScreenShot() throws IOException {
+	public static String takeScreenShot() throws IOException {
 		File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd-hh-mm-ss");
 		long currentTime = System.currentTimeMillis();

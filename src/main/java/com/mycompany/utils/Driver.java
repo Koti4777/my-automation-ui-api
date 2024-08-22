@@ -13,7 +13,7 @@ public class Driver {
 
 	
 	public static WebDriver driver;
-private Driver(){}
+private Driver(){}// private constructor 
 
 	public static WebDriver getInstance() {
 		if (driver == null || ((RemoteWebDriver)driver).getSessionId() == null ) {

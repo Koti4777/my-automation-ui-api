@@ -17,14 +17,12 @@ public class ReverseEachWordOfString22 {
 		String[] words = input.split(" ");
 		System.out.println("Input---"+input);
 		StringBuilder output = new StringBuilder();
-
-		for (int i=0;i<words.length;i++) {
-
-			StringBuilder sb = new StringBuilder(words[i]);		
-			output.append(sb.reverse().toString());
-			output.append(" ");
-
-		}
+			for (String word:words) {
+				StringBuilder sb = new StringBuilder(word);
+				output.append(sb.reverse().toString());
+				output.append(" ");
+			}
+		
 
 		return output.toString();
 

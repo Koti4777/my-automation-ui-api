@@ -3,19 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNGDemo.TestNGDemo">
+      <class name="com.mycompany.selenium.BrokenURLs">
         <methods>
-          <include name="beforeTestClassone"/>
-          <include name="beforeSuite"/>
-          <include name="beforeMethodClassone"/>
-          <include name="afterMethodClassOne"/>
-          <include name="test3Class1"/>
-          <include name="beforeClassTestClassOne"/>
-          <include name="afterSuite"/>
-          <include name="afterTestClassone"/>
-          <include name="afterClassTestClassOne"/>
+          <include name="tearDwon"/>
+          <include name="brokenUrl"/>
+          <include name="initiateBroswer"/>
         </methods>
-      </class> <!-- testNGDemo.TestNGDemo -->
+      </class> <!-- com.mycompany.selenium.BrokenURLs -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

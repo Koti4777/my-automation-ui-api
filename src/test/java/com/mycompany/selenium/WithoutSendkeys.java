@@ -5,13 +5,14 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Reporter;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class StaleElementDemo {
+public class WithoutSendkeys {
 
 	WebDriver driver;
 
@@ -24,24 +25,43 @@ public class StaleElementDemo {
 
 	}
 	@Test
-	public void staleDemo() {
+	public void withoutSendKeys() {
 		try {
 			driver.get("https://demoqa.com/text-box");
 			WebElement elm = driver.findElement(By.xpath("//input[@id='userName']"));
-
-			elm.sendKeys("Hello");
-
+				
+			
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			js.executeScript("document.getElementById('userName').value = 'jsvalue';");
 			Thread.sleep(5000);
-			driver.navigate().refresh();
-			elm.sendKeys("Newstring");
+			
+		}catch(Exception e) {
+			
+		}
+		
+	}
+	@Test
+	public void checkBoxSelected() {
+		try {
+			driver.get("https://demo.automationtesting.in/Register.html");
+			WebElement elm = driver.findElement(By.xpath("//input[@id='checkbox1']"));
+			elm.click();
+			if (elm.isSelected()) {
+				System.out.println("element is checked");
+			}else {
+				System.out.println("element not checked");
+			}
+			String methodName = Reporter.getCurrentTestResult().getName();
+			System.out.println("Method name is ----"+methodName);
 		}catch(Exception e) {
 			e.printStackTrace();
 			System.out.println("Exception --- "+ e);
 		}
-
+		
 	}
 	@AfterTest
 	public void tearDwon() {
 		driver.close();
 	}
 }
+

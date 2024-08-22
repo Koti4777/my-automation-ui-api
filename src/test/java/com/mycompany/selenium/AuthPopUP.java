@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -33,32 +34,15 @@ public class AuthPopUP {
 	 
 	
 	@Test
-	public void brokenUrlDemo() {
+	public void authPopDemo() {
 		try {
-			
-			driver.get("https://demoqa.com/broken");
-			List<WebElement> links = driver.findElements(By.tagName("a"));
-			String url;
-			for (WebElement link:links) {
-				url = link.getAttribute("href");
-				if (url!=null && !url.isEmpty()) {
-					
-				try {
-					URL urlObj = new URL(url);
-					HttpURLConnection con = (HttpURLConnection) urlObj.openConnection();
-					/* con.setRequestMethod("HEAD"); */
-					con.connect();
-				if (con.getResponseCode()!=200) {
-					System.out.println(url+"---"+con.getResponseCode());
-				}
-				con.disconnect();
-				}catch(Exception e) {
-					
-				}
-					
-				}
-				
-			}
+			//https://the-internet.herokuapp.com/basic_auth
+			String username ="admin";
+			String password = "admin";
+			driver.get("https://"+username+":"+password+"@"+"the-internet.herokuapp.com/basic_auth");
+		String actualText = driver.findElement(By.xpath("//div[@id='content']/div/p")).getText().trim();
+		System.out.println(actualText);
+		Assert.assertEquals(actualText, "Congratulations! You must have the proper credentials.");
 		
 		}catch(Exception e) {
 			e.printStackTrace();

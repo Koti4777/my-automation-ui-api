@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-23T01:00:53 IST" name="Default suite" finished-at="2024-08-23T01:01:19 IST" duration-ms="25400">
+  <suite started-at="2024-08-23T10:28:01 IST" name="Default suite" finished-at="2024-08-23T10:28:14 IST" duration-ms="12945">
     <groups>
     </groups>
-    <test started-at="2024-08-23T01:00:53 IST" name="Default test" finished-at="2024-08-23T01:01:19 IST" duration-ms="25400">
-      <class name="com.mycompany.selenium.DragDrop">
-        <test-method is-config="true" signature="initiateBroswer()[pri:0, instance:com.mycompany.selenium.DragDrop@2fb3536e]" started-at="2024-08-23T01:00:53 IST" name="initiateBroswer" finished-at="2024-08-23T01:00:59 IST" duration-ms="5609" status="PASS">
+    <test started-at="2024-08-23T10:28:01 IST" name="Default test" finished-at="2024-08-23T10:28:14 IST" duration-ms="12945">
+      <class name="com.mycompany.selenium.UrlTest">
+        <test-method is-config="true" signature="initiateBroswer()[pri:0, instance:com.mycompany.selenium.UrlTest@6283d8b8]" started-at="2024-08-23T10:28:01 IST" name="initiateBroswer" finished-at="2024-08-23T10:28:13 IST" duration-ms="11738" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateBroswer -->
-        <test-method signature="dragDrop()[pri:0, instance:com.mycompany.selenium.DragDrop@2fb3536e]" started-at="2024-08-23T01:00:59 IST" name="dragDrop" finished-at="2024-08-23T01:01:18 IST" duration-ms="19459" status="PASS">
+        <test-method signature="findAllLinks()[pri:0, instance:com.mycompany.selenium.UrlTest@6283d8b8]" started-at="2024-08-23T10:28:13 IST" name="findAllLinks" finished-at="2024-08-23T10:28:14 IST" duration-ms="959" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dragDrop -->
-        <test-method is-config="true" signature="tearDwon()[pri:0, instance:com.mycompany.selenium.DragDrop@2fb3536e]" started-at="2024-08-23T01:01:18 IST" name="tearDwon" finished-at="2024-08-23T01:01:19 IST" duration-ms="282" status="PASS">
+        </test-method> <!-- findAllLinks -->
+        <test-method is-config="true" signature="tearDwon()[pri:0, instance:com.mycompany.selenium.UrlTest@6283d8b8]" started-at="2024-08-23T10:28:14 IST" name="tearDwon" finished-at="2024-08-23T10:28:14 IST" duration-ms="187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDwon -->
-      </class> <!-- com.mycompany.selenium.DragDrop -->
+      </class> <!-- com.mycompany.selenium.UrlTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

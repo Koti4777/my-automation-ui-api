@@ -8,6 +8,7 @@ import java.text.SimpleDateFormat;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -48,6 +49,8 @@ public class DragDrop {
 		System.out.println("dropped");
 		action.doubleClick().perform();//Double click using action item.
 		action.doubleClick(drop);//double click on the eliement
+		action.sendKeys(Keys.F5);
+	
 		Thread.sleep(5000);
 		System.out.println("After Sleep");
 		File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);

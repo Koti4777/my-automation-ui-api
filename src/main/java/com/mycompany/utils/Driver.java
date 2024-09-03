@@ -5,20 +5,22 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Driver {
 
-	
+
 	public static WebDriver driver;
-private Driver(){}// private constructor 
+	private Driver(){}// private constructor 
 
 	public static WebDriver getInstance() {
 		if (driver == null || ((RemoteWebDriver)driver).getSessionId() == null ) {
 
 			switch("chrome") {
+
 			case "chrome":
 				ChromeOptions chromeOptions = new ChromeOptions();
 				WebDriverManager.chromedriver().setup();
@@ -42,11 +44,12 @@ private Driver(){}// private constructor
 				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver(options);	
 				break;
-				default:
-					throw new IllegalArgumentException("Unsupported broswer");
+
+			default:
+				throw new IllegalArgumentException("Unsupported broswer");
 			}
 		}
-	//	WebDriverDispatcher disp = new WebDriverDispatcher(driver);
+		//	WebDriverDispatcher disp = new WebDriverDispatcher(driver);
 		return driver;
 	}
 }

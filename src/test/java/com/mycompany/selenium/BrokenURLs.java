@@ -25,6 +25,10 @@ public class BrokenURLs {
 		  driver = Driver.getInstance();
 	  
 	  }
+
+
+
+	 
 	 
 	
 	@Test

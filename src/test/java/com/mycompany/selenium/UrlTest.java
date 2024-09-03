@@ -20,13 +20,13 @@ public class UrlTest {
 	WebDriver driver;
 
 
-	@BeforeTest
-	public void initiateBroswer() {
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-
-	}
+	/*
+	 * @BeforeTest public void initiateBroswer() {
+	 * WebDriverManager.chromedriver().setup(); driver = new ChromeDriver();
+	 * driver.manage().window().maximize();
+	 * 
+	 * }
+	 */
 	@Test
 	public void findAllLinks() throws IOException {
 	
@@ -34,19 +34,20 @@ public class UrlTest {
 			URL  urlObj = new URL(url);
 			HttpURLConnection con = (HttpURLConnection) urlObj.openConnection();
 			int responseCode = con.getResponseCode();
+			
 			if (responseCode==200) {
-				System.out.println("urlworking");
+				System.out.println("url is working");
 			}else {
-				System.out.println("url not working");
+				System.out.println("url is not working");
 			}
 			
 		
 
 	}
 
-	@AfterTest public void tearDwon() {
-		driver.close();
-	}
+	/*
+	 * @AfterTest public void tearDwon() { driver.close(); }
+	 */
 
 }
 

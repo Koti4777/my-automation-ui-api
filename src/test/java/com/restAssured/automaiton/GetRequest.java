@@ -3,6 +3,7 @@ package com.restAssured.automaiton;
 import org.testng.Assert;
 
 import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 import io.restassured.http.Headers;
 import io.restassured.http.Method;
 import io.restassured.path.json.JsonPath;
@@ -18,6 +19,7 @@ public class GetRequest {
 		//Response response = RestAssured.get("http://bookstore.toolsqa.com/Bookstore/v1/Books");
 		RestAssured.baseURI="http://bookstore.toolsqa.com";
 		RequestSpecification httpRequest = RestAssured.given();
+		//Response response = httpRequest.contentType(ContentType.JSON).get("/Bookstore/v1/Books");
 		Response response = httpRequest.request(Method.GET, "/Bookstore/v1/Books");
 		int statuscode = response.getStatusCode();
 		System.out.println(statuscode);

@@ -35,7 +35,7 @@ public class GetReqresDemoListUsers {
 			System.out.println(da.get("first_name"));
 			System.out.println(da.get("last_name"));
 			System.out.println(da.get("avatar"));
-			System.out.println("-------------------");
+			System.out.println("--------------------------------------------------------------");
 		}
 		
 		

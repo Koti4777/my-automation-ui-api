@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.restAssured.automaiton.PostReqresCreateUser">
+      <class name="com.mycompany.selenium.SelectMenuDemo">
         <methods>
-          <include name="getConnection"/>
-          <include name="getUsers"/>
+          <include name="initiateBroswer"/>
+          <include name="staleDemo"/>
+          <include name="tearDwon"/>
         </methods>
-      </class> <!-- com.restAssured.automaiton.PostReqresCreateUser -->
+      </class> <!-- com.mycompany.selenium.SelectMenuDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

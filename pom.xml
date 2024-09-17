@@ -10,8 +10,8 @@
 	<url>http://www.example.com</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.7</maven.compiler.source>
-		<maven.compiler.target>1.7</maven.compiler.target>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
 		<selenium.driver.autodownload>true</selenium.driver.autodownload>
 	</properties>
 	<dependencies>
@@ -117,7 +117,7 @@
 				</plugin>
 				<plugin>
 					<artifactId>maven-surefire-plugin</artifactId>
-					<version>2.22.1</version>
+					<version>3.0.0-M5</version>
 				</plugin>
 				<plugin>
 					<artifactId>maven-jar-plugin</artifactId>

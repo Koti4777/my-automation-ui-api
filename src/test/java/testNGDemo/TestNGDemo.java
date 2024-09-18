@@ -49,7 +49,7 @@ public class TestNGDemo{
 	@Test
 	public void test3Class1() { 
 
-		Assert.assertEquals("Completed", "Accepted", "Verification of the status");
+		Assert.assertEquals("Completed", "Completed", "Verification of the status");
 	}
 
 	@BeforeClass

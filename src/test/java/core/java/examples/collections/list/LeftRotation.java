@@ -24,10 +24,8 @@ public class LeftRotation {
 			
 			result[i] = a[(i+mod)%len];
 		}
-		
-		
-		return result;
-		
+				
+		return result;		
 	}
 
 }

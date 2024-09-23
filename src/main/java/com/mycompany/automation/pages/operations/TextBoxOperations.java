@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -21,7 +22,11 @@ public class TextBoxOperations extends CommonOperations {
 	}
 
 	public void fillTheForm() throws IOException {
-	
+		/*
+		 * driver.findElement(By.id("firstName"));
+		 * driver.findElement(By.cssSelector("#firstName"));
+		 * driver.findElement(By.xpath("//input[@id='firstName']"));
+		 */
 	textBox.fullName.sendKeys("Hello");
 	textBox.fullName.sendKeys("fullname");
 	textBox.email.sendKeys("test@gmail.com");

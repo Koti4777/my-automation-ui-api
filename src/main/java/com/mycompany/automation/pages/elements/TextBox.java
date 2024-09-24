@@ -34,7 +34,21 @@ public class TextBox
    @FindBy(xpath = "//input[@id='userEmail']")
   	public  WebElement email;
    
-   @FindBy(xpath = "//textarea[@id='currentAddress']")
+   @FindBy(xpath = "//input[@id='userEmail']")
+ 	private  WebElement emailPrivate;
+   
+   
+   public WebElement getEmailPrivate() {
+	return emailPrivate;
+}
+
+
+public void setEmailPrivate(WebElement emailPrivate) {
+	this.emailPrivate = emailPrivate;
+}
+
+
+@FindBy(xpath = "//textarea[@id='currentAddress']")
  	public  WebElement currentAddress;
    
    @FindBy(xpath = "//textarea[@id='permanentAddress']")
@@ -43,6 +57,7 @@ public class TextBox
    @FindBy(xpath = " //button[@id='submit']")
 	public WebElement submitButton;
 
+   
 public void submitForm() {
 	
 	fullName.sendKeys("Hello");

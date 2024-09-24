@@ -1,0 +1,18 @@
+app:
+  name: "Test Application"
+  version: "1.0.0"
+  enabled: true
+
+browsers:
+  - name: "chrome"
+    version: "91.0"
+    headless: true
+  - name: "firefox"
+    version: "89.0"
+    headless: false
+
+environment:
+  url: "https://example.com"
+  credentials:
+    username: "user123"
+    password: "secret123"

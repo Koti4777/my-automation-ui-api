@@ -23,7 +23,7 @@ public class Driver {
 
 			case "chrome":
 				ChromeOptions chromeOptions = new ChromeOptions();
-				WebDriverManager.chromedriver().setup();
+				//WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver(chromeOptions);	
 				driver.manage().window().maximize();
 				break;

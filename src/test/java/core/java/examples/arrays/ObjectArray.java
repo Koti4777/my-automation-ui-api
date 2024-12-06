@@ -25,6 +25,10 @@ public class ObjectArray {
 		objArray[1]=obj2;
 		objArray[2]=obj3;
 		
+		System.out.println(Arrays.deepToString(objArray));
+
 		
+		Object[] objectArray = { "Hello", 123, true };
+        System.out.println(Arrays.toString(objectArray));
 	}
 }

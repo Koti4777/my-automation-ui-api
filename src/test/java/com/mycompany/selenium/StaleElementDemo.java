@@ -28,6 +28,7 @@ public class StaleElementDemo {
 		try {
 			driver.get("https://demoqa.com/text-box");
 			WebElement elm = driver.findElement(By.xpath("//input[@id='userName']"));
+			System.out.println(elm.getAttribute("value"));
 
 			elm.sendKeys("Hello");
 

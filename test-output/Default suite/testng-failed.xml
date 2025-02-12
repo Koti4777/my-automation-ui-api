@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.mycompany.selenium.BrokenURLs">
+      <class name="com.restAssured.automaiton.PostRegister">
         <methods>
-          <include name="tearDwon"/>
-          <include name="brokenUrl"/>
-          <include name="initiateBroswer"/>
+          <include name="getConnection"/>
+          <include name="createUser"/>
         </methods>
-      </class> <!-- com.mycompany.selenium.BrokenURLs -->
+      </class> <!-- com.restAssured.automaiton.PostRegister -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

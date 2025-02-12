@@ -14,7 +14,9 @@ public class Driver {
 
 
 	public static WebDriver driver;
-	private Driver(){}// private constructor 
+	private Driver(){
+		
+	}// private constructor 
 
 	public static WebDriver getInstance() {
 		if (driver == null || ((RemoteWebDriver)driver).getSessionId() == null ) {
@@ -22,18 +24,18 @@ public class Driver {
 			switch("chrome") {
 
 			case "chrome":
-				ChromeOptions chromeOptions = new ChromeOptions();
+				//ChromeOptions chromeOptions = new ChromeOptions();
 				//WebDriverManager.chromedriver().setup();
-				driver = new ChromeDriver(chromeOptions);	
+				driver = new ChromeDriver();	
 				driver.manage().window().maximize();
 				break;
 			case "Firefox":
-				WebDriverManager.firefoxdriver().setup();
+			//	WebDriverManager.firefoxdriver().setup();
 				driver = new FirefoxDriver();
 				driver.manage().window().maximize();
 				break;
 			case "Edge":
-				WebDriverManager.edgedriver().setup();
+				//WebDriverManager.edgedriver().setup();
 				driver = new EdgeDriver();
 				driver.manage().window().maximize();
 				break;
@@ -41,7 +43,7 @@ public class Driver {
 				System.out.println("came here");
 				ChromeOptions options = new ChromeOptions();
 				options.addArguments("--headless");
-				WebDriverManager.chromedriver().setup();
+			//	WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver(options);	
 				break;
 

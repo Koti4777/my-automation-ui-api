@@ -20,16 +20,13 @@ public class SecondLargestWithoutSorting {
 
 		for  (int i =0;i<input.length;i++) {
 
-			/*	if (firstLargest==secondLargest) {
-				firstLargest=input[i];
-			}else {*/
 			if (firstLargest<input[i]) {
 				secondLargest=firstLargest;
 				firstLargest=input[i];
 			}else if (secondLargest<input[i]){
 				secondLargest=input[i];
 			}
-			//}
+			
 		}
 
 
